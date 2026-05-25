@@ -1,6 +1,7 @@
 import { useEffect } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Dashboard } from './pages/Dashboard'
+import alafdalLogo from './assets/alafdal-logo.png'
 
 const LANGUAGES = ['en', 'ar', 'fr'] as const
 
@@ -16,7 +17,7 @@ export function App() {
     <>
       <nav className="navbar">
         <span className="navbar__brand">
-          <img src="/alafdal-logo.png" alt="Alafdal" className="navbar__logo" />
+          <img src={alafdalLogo} alt="Alafdal" className="navbar__logo" />
           {t('appName')}
         </span>
         <span className="navbar__tagline">{t('tagline')}</span>
