@@ -1,0 +1,63 @@
+{
+  "appName": "مستشار الطاقة",
+  "tagline": "حاسبة تكاليف الطاقة الذكية",
+  "inputPanel": {
+    "title": "تفاصيل الجهاز",
+    "devicePower": "قدرة الجهاز (واط)",
+    "phaseType": "نوع الطور",
+    "singlePhase": "أحادي الطور",
+    "threePhase": "ثلاثي الطور",
+    "dailyHours": "ساعات الاستخدام اليومي",
+    "pricing": "الأسعار",
+    "electricityPrice": "سعر الكهرباء (لكل كيلوواط·ساعة)",
+    "dieselPrice": "سعر الديزل (للتر)",
+    "solarBudget": "ميزانية تركيب الطاقة الشمسية (اختياري، ف.أ.و.م)",
+    "solarPanelCount": "عدد الألواح الشمسية",
+    "solarPanelWatts": "واط لكل لوح",
+    "calculatedCapacity": "← الطاقة: {{value}} كيلوواط (تلقائي)",
+    "calculatedPanels": "← {{value}} لوح (تلقائي)",
+    "solarCapacity": "طاقة الطاقة الشمسية (كيلوواط)",
+    "placeholderCapacity": "مثال: 8.25",
+    "placeholderWatts": "مثال: 7000",
+    "placeholderHours": "مثال: 8",
+    "placeholderElectricity": "مثال: 90",
+    "placeholderDiesel": "مثال: 550",
+    "placeholderSolar": "مثال: 2500000",
+    "placeholderPanelCount": "مثال: 20",
+    "placeholderPanelWatts": "مثال: 400"
+  },
+  "sources": {
+    "electricity": "الكهرباء",
+    "generator": "المولد الكهربائي",
+    "solar": "الطاقة الشمسية"
+  },
+  "metrics": {
+    "perMonth": "شهرياً",
+    "annualCost": "سنوياً: {{value}}",
+    "dailyKwh": "يومياً: {{value}} كيلوواط·ساعة",
+    "litersPerDay": "{{value}} لتر / يوم",
+    "sizeNeeded": "حجم المولد: {{value}} كيلو فولت أمبير",
+    "panelsCount": "{{count}} × {{watts}} واط",
+    "totalCapacity": "الطاقة: {{value}} كيلوواط",
+    "batterySize": "بنك البطاريات: {{value}} كيلوواط·ساعة",
+    "coverage": "التغطية: {{value}}%",
+    "installCost": "تكلفة التركيب (مرة واحدة)",
+    "monthlyEquiv": "المعادل الشهري: {{value}}",
+    "payback": "فترة الاسترداد: ~{{value}} سنوات",
+    "paybackNote": "تقدير مبسّط — لا يشمل التمويل، وتدهور الألواح، والصيانة، واستبدال البطاريات.",
+    "enterBudget": "أدخل ميزانية التركيب للمقارنة",
+    "enterPanels": "أدخل عدد الألواح للمقارنة"
+  },
+  "bestValue": "الأفضل قيمة",
+  "chart": {
+    "title": "مقارنة التكاليف لمدة 5 سنوات",
+    "note": "يعكس عمود الطاقة الشمسية إجمالي تكلفة التركيب (مُستهلَكة على 5 سنوات)",
+    "costLabel": "تكلفة 5 سنوات"
+  },
+  "recommendation": {
+    "solar": "الطاقة الشمسية توفر لك {{savings}} خلال 5 سنوات.",
+    "solarPartial": "الطاقة الشمسية توفر لك {{savings}} خلال 5 سنوات، لكن بتغطية {{coverage}}% فقط لا يمكنها تشغيل جهازك بالكامل — ستحتاج إلى شبكة الكهرباء للـ {{remaining}}% المتبقية.",
+    "electricity": "الكهرباء هي الخيار الأوفر تكلفةً لاستهلاكك.",
+    "generator": "المولد الكهربائي هو الخيار الأوفر تكلفةً لاستهلاكك."
+  }
+}

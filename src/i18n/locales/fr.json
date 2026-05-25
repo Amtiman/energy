@@ -1,0 +1,63 @@
+{
+  "appName": "ConseillerÉnergie",
+  "tagline": "Calculateur de coûts d'énergie intelligent",
+  "inputPanel": {
+    "title": "Détails de l'appareil",
+    "devicePower": "Puissance de l'appareil (Watts)",
+    "phaseType": "Type de phase",
+    "singlePhase": "Monophasé",
+    "threePhase": "Triphasé",
+    "dailyHours": "Utilisation quotidienne (heures)",
+    "pricing": "Tarification",
+    "electricityPrice": "Prix de l'électricité (par kWh)",
+    "dieselPrice": "Prix du diesel (par litre)",
+    "solarBudget": "Budget installation solaire (optionnel, XAF)",
+    "solarPanelCount": "Nombre de panneaux solaires",
+    "solarPanelWatts": "Watts par panneau",
+    "calculatedCapacity": "→ Capacité : {{value}} kW (auto)",
+    "calculatedPanels": "→ {{value}} panneaux (auto)",
+    "solarCapacity": "Capacité solaire (kW)",
+    "placeholderCapacity": "ex : 8,25",
+    "placeholderWatts": "ex : 7000",
+    "placeholderHours": "ex : 8",
+    "placeholderElectricity": "ex : 90",
+    "placeholderDiesel": "ex : 550",
+    "placeholderSolar": "ex : 2500000",
+    "placeholderPanelCount": "ex : 20",
+    "placeholderPanelWatts": "ex : 400"
+  },
+  "sources": {
+    "electricity": "Électricité réseau",
+    "generator": "Groupe électrogène",
+    "solar": "Solaire"
+  },
+  "metrics": {
+    "perMonth": "par mois",
+    "annualCost": "Annuel : {{value}}",
+    "dailyKwh": "Quotidien : {{value}} kWh",
+    "litersPerDay": "{{value}} litres / jour",
+    "sizeNeeded": "Taille groupe : {{value}} kVA",
+    "panelsCount": "{{count}} × {{watts}}W",
+    "totalCapacity": "Capacité : {{value}} kW",
+    "batterySize": "Banque de batteries : {{value}} kWh",
+    "coverage": "Couverture : {{value}}%",
+    "installCost": "coût d'installation (unique)",
+    "monthlyEquiv": "Équiv. mensuel : {{value}}",
+    "payback": "Remboursement : ~{{value}} ans",
+    "paybackNote": "Estimation simplifiée — exclut le financement, la dégradation des panneaux, la maintenance et le remplacement des batteries.",
+    "enterBudget": "Entrez le budget d'installation pour comparer",
+    "enterPanels": "Entrez le nombre de panneaux pour comparer"
+  },
+  "bestValue": "MEILLEUR CHOIX",
+  "chart": {
+    "title": "Comparaison des coûts sur 5 ans",
+    "note": "La barre solaire représente le coût total d'installation (amorti sur 5 ans)",
+    "costLabel": "Coût sur 5 ans"
+  },
+  "recommendation": {
+    "solar": "Le solaire vous fait économiser {{savings}} sur 5 ans.",
+    "solarPartial": "Le solaire vous fait économiser {{savings}} sur 5 ans, mais avec une couverture de {{coverage}}% il ne peut pas alimenter entièrement votre appareil — vous aurez encore besoin du réseau pour les {{remaining}}% restants.",
+    "electricity": "L'électricité réseau est l'option la plus rentable pour votre usage.",
+    "generator": "Le groupe électrogène est l'option la plus rentable pour votre usage."
+  }
+}

@@ -1,0 +1,63 @@
+{
+  "appName": "EnergyAdvisor",
+  "tagline": "Smart Energy Cost Calculator",
+  "inputPanel": {
+    "title": "Device Details",
+    "devicePower": "Device Power (Watts)",
+    "phaseType": "Phase Type",
+    "singlePhase": "Single Phase",
+    "threePhase": "3-Phase",
+    "dailyHours": "Daily Usage (Hours)",
+    "pricing": "Pricing",
+    "electricityPrice": "Electricity Price (per kWh)",
+    "dieselPrice": "Diesel Price (per Liter)",
+    "solarBudget": "Solar Install Budget (optional, XAF)",
+    "solarPanelCount": "Number of Solar Panels",
+    "solarPanelWatts": "Watts per Panel",
+    "calculatedCapacity": "→ Capacity: {{value}} kW (auto)",
+    "calculatedPanels": "→ {{value}} panels (auto)",
+    "solarCapacity": "Solar Capacity (kW)",
+    "placeholderCapacity": "e.g. 8.25",
+    "placeholderWatts": "e.g. 7000",
+    "placeholderHours": "e.g. 8",
+    "placeholderElectricity": "e.g. 90",
+    "placeholderDiesel": "e.g. 550",
+    "placeholderSolar": "e.g. 2500000",
+    "placeholderPanelCount": "e.g. 20",
+    "placeholderPanelWatts": "e.g. 400"
+  },
+  "sources": {
+    "electricity": "Grid Electricity",
+    "generator": "Generator",
+    "solar": "Solar"
+  },
+  "metrics": {
+    "perMonth": "per month",
+    "annualCost": "Annual: {{value}}",
+    "dailyKwh": "Daily: {{value}} kWh",
+    "litersPerDay": "{{value}} liters / day",
+    "sizeNeeded": "Generator size: {{value}} kVA",
+    "panelsCount": "{{count}} × {{watts}}W",
+    "totalCapacity": "Capacity: {{value}} kW",
+    "batterySize": "Battery bank: {{value}} kWh",
+    "coverage": "Coverage: {{value}}%",
+    "installCost": "install cost (one-time)",
+    "monthlyEquiv": "Monthly equiv: {{value}}",
+    "payback": "Payback: ~{{value}} years",
+    "paybackNote": "Simplified estimate — excludes financing, panel degradation, maintenance, and battery replacement.",
+    "enterBudget": "Enter install budget to compare",
+    "enterPanels": "Enter panel count to compare"
+  },
+  "bestValue": "BEST VALUE",
+  "chart": {
+    "title": "5-Year Cost Comparison",
+    "note": "Solar bar shows total installation cost (amortized over 5 years)",
+    "costLabel": "5-Year Cost"
+  },
+  "recommendation": {
+    "solar": "Solar saves you {{savings}} over 5 years.",
+    "solarPartial": "Solar saves you {{savings}} over 5 years, but at {{coverage}}% coverage it cannot fully power your device — you will still need grid electricity for the remaining {{remaining}}%.",
+    "electricity": "Grid electricity is the most cost-effective option for your usage.",
+    "generator": "A generator is the most cost-effective option for your usage."
+  }
+}

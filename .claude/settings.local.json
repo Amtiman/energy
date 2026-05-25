@@ -1,0 +1,28 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(dir C:\\\\Users\\\\lenovo\\\\React-Projects\\\\energy *)",
+      "Bash(bash *)",
+      "Bash(git add *)",
+      "Bash(git commit *)",
+      "Bash(npm create *)",
+      "Bash(npx create-vite@latest . --template react-ts --force)",
+      "Bash(npx create-vite@latest energy-tmp --template react-ts)",
+      "Bash(Copy-Item -Path \"C:\\\\Users\\\\lenovo\\\\React-Projects\\\\energy-tmp\\\\*\" -Destination \"C:\\\\Users\\\\lenovo\\\\React-Projects\\\\energy\\\\\" -Recurse -Force 2>&1; Copy-Item -Path \"C:\\\\Users\\\\lenovo\\\\React-Projects\\\\energy-tmp\\\\.gitignore\" -Destination \"C:\\\\Users\\\\lenovo\\\\React-Projects\\\\energy\\\\\" -Force)",
+      "Bash(git *)",
+      "Bash(npx vitest *)",
+      "Bash(npx tsc *)",
+      "Bash(npx vite *)",
+      "Bash(curl -s http://localhost:5175/)",
+      "Bash(npx kill-port *)",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(grep -rn \"#[0-9a-fA-F]\\\\{3,6\\\\}\" src/components/ src/pages/ src/App.tsx)",
+      "Bash(npx eslint *)",
+      "Bash(grep -v \"//.*any\")",
+      "Bash(node -e ' *)",
+      "Bash(node --input-type=module -e ' *)",
+      "Bash(echo \"exit $?\")",
+      "Bash(npm test *)"
+    ]
+  }
+}

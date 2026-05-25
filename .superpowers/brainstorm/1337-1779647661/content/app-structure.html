@@ -1,0 +1,84 @@
+<h2>How should the app be structured?</h2>
+<p class="subtitle">You described a 3-option energy advisor. Which overall layout fits best?</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="wizard" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#1e293b;border-radius:8px;padding:16px;font-size:12px;color:#94a3b8">
+        <div style="background:#0A823B;color:white;border-radius:6px;padding:8px 12px;margin-bottom:12px;font-weight:600">⚡ Step 1 of 3 — Choose Energy Source</div>
+        <div style="display:flex;gap:8px;margin-bottom:12px">
+          <div style="flex:1;background:#334155;border:2px solid #0A823B;border-radius:8px;padding:10px;text-align:center;color:white;font-size:11px">⚡ Electricity</div>
+          <div style="flex:1;background:#334155;border-radius:8px;padding:10px;text-align:center;font-size:11px">⛽ Generator</div>
+          <div style="flex:1;background:#334155;border-radius:8px;padding:10px;text-align:center;font-size:11px">☀️ Solar</div>
+        </div>
+        <div style="background:#334155;border-radius:6px;padding:10px;margin-bottom:10px">
+          <div style="color:#94a3b8;font-size:10px;margin-bottom:4px">Device Power (Watts)</div>
+          <div style="background:#1e293b;border-radius:4px;padding:6px;color:#e2e8f0">7000 W</div>
+        </div>
+        <div style="background:#0A823B;color:white;border-radius:6px;padding:8px;text-align:center;font-weight:600">→ Next: Enter Details</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Step-by-Step Wizard</h3>
+      <p>User moves through guided steps: choose source → enter data → see results. Clean, focused, mobile-friendly.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="tabs" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#1e293b;border-radius:8px;padding:16px;font-size:12px;color:#94a3b8">
+        <div style="display:flex;gap:2px;margin-bottom:12px;background:#0f172a;border-radius:6px;padding:4px">
+          <div style="flex:1;background:#0A823B;color:white;border-radius:4px;padding:6px;text-align:center;font-size:11px;font-weight:600">Input</div>
+          <div style="flex:1;padding:6px;text-align:center;font-size:11px">Results</div>
+          <div style="flex:1;padding:6px;text-align:center;font-size:11px">Comparison</div>
+        </div>
+        <div style="display:flex;gap:8px;margin-bottom:8px">
+          <div style="flex:1;background:#334155;border:2px solid #0A823B;border-radius:8px;padding:8px;text-align:center;color:white;font-size:10px">⚡ Electricity</div>
+          <div style="flex:1;background:#334155;border-radius:8px;padding:8px;text-align:center;font-size:10px">⛽ Generator</div>
+          <div style="flex:1;background:#334155;border-radius:8px;padding:8px;text-align:center;font-size:10px">☀️ Solar</div>
+        </div>
+        <div style="background:#334155;border-radius:6px;padding:8px;margin-bottom:8px;font-size:10px;color:#e2e8f0">Power: 7000W · Hours: 8h/day · Phase: 3-phase</div>
+        <div style="background:#2E3192;color:white;border-radius:6px;padding:8px;text-align:center;font-weight:600;font-size:11px">Analyze →</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — 3-Tab Interface</h3>
+      <p>Tabs across the top: Input → Results → Comparison. Auto-advances after analysis. (This is what the previous session had.)</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="dashboard" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:#1e293b;border-radius:8px;padding:16px;font-size:12px;color:#94a3b8">
+        <div style="background:#0f172a;border-radius:6px;padding:8px;margin-bottom:10px;display:flex;justify-content:space-between;align-items:center">
+          <span style="color:#0A823B;font-weight:700">⚡ EnergyAdvisor</span>
+          <span style="color:#64748b;font-size:10px">by Alafdal</span>
+        </div>
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:8px;margin-bottom:8px">
+          <div style="background:#334155;border-radius:6px;padding:8px">
+            <div style="color:#0A823B;font-size:10px;margin-bottom:4px">Device Power</div>
+            <div style="color:white;font-weight:600">7,000 W</div>
+          </div>
+          <div style="background:#334155;border-radius:6px;padding:8px">
+            <div style="color:#2E3192;font-size:10px;margin-bottom:4px">Best Option</div>
+            <div style="color:white;font-weight:600">☀️ Solar</div>
+          </div>
+        </div>
+        <div style="background:#334155;border-radius:6px;padding:8px;font-size:10px">
+          <div style="color:#e2e8f0;margin-bottom:4px">Monthly Cost Comparison</div>
+          <div style="display:flex;gap:4px;align-items:flex-end;height:30px">
+            <div style="width:20px;background:#0A823B;height:40%;border-radius:2px 2px 0 0"></div>
+            <div style="width:20px;background:#2E3192;height:100%;border-radius:2px 2px 0 0"></div>
+            <div style="width:20px;background:#F59E0B;height:70%;border-radius:2px 2px 0 0"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Dashboard with All-in-One View</h3>
+      <p>Full dashboard: input panel on the left, results + charts on the right. Everything visible at once, no tab switching.</p>
+    </div>
+  </div>
+
+</div>

@@ -1,0 +1,240 @@
+/* Component layout styles — uses brand.css variables */
+
+/* ── Navbar ── */
+.navbar {
+  background: var(--brand-blue);
+  color: var(--color-text-inverse);
+  padding: 12px var(--space-6);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  position: sticky;
+  top: 0;
+  z-index: 10;
+}
+.navbar__brand {
+  font-weight: 700;
+  font-size: 1.125rem;
+  white-space: nowrap;
+}
+.navbar__tagline {
+  flex: 1;
+  font-size: 0.875rem;
+  opacity: 0.7;
+}
+.lang-switcher { display: flex; gap: var(--space-1); }
+.lang-btn {
+  background: transparent;
+  border: 1px solid rgba(255,255,255,0.4);
+  color: var(--color-text-inverse);
+  border-radius: var(--radius-xs);
+  padding: 4px 8px;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: background 0.15s;
+}
+.lang-btn:hover { background: rgba(255,255,255,0.15); }
+.lang-btn--active {
+  background: rgba(255,255,255,0.25);
+  border-color: var(--color-text-inverse);
+  font-weight: 600;
+}
+
+/* ── Dashboard grid ── */
+.dashboard {
+  display: grid;
+  grid-template-columns: 280px 1fr;
+  min-height: calc(100vh - 49px);
+  max-width: 1280px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .dashboard { grid-template-columns: 1fr; }
+}
+
+/* ── Input Panel ── */
+.input-panel {
+  background: var(--color-bg-page);
+  border-inline-end: 1px solid var(--color-card-border);
+  padding: var(--space-6);
+  overflow-y: auto;
+}
+.section-label {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--brand-blue);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin: 0 0 var(--space-4) 0;
+}
+.field {
+  display: block;
+  margin-bottom: var(--space-4);
+}
+.field-label {
+  display: block;
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-1);
+  font-weight: 500;
+}
+.field-input {
+  width: 100%;
+  border: 1px solid var(--color-input-border);
+  border-radius: var(--radius-sm);
+  padding: 6px 10px;
+  font-size: 0.875rem;
+  color: var(--color-text-body);
+  background: var(--color-bg-subtle);
+}
+.field-hint {
+  font-size: 0.75rem;
+  color: var(--brand-green);
+  font-weight: 600;
+  margin: calc(var(--space-1) * -1) 0 var(--space-2) 0;
+}
+.field-input:focus {
+  outline: none;
+  border-color: var(--color-input-border-focus);
+  box-shadow: var(--shadow-focus);
+}
+.phase-toggle { display: flex; gap: var(--space-1); }
+.phase-btn {
+  flex: 1;
+  padding: 6px;
+  border: 1px solid var(--color-input-border);
+  border-radius: var(--radius-sm);
+  background: var(--color-bg-subtle);
+  color: var(--color-text-muted);
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.phase-btn.active {
+  background: var(--brand-blue);
+  color: var(--color-text-inverse);
+  border-color: var(--brand-blue);
+  font-weight: 600;
+}
+.divider {
+  border: none;
+  border-top: 1px dashed var(--color-card-border);
+  margin: var(--space-4) 0;
+}
+
+/* ── Results area ── */
+.dashboard__results {
+  padding: var(--space-6);
+  background: var(--color-bg-page);
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-4);
+}
+.cards-row {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--space-4);
+}
+@media (max-width: 900px) {
+  .cards-row { grid-template-columns: 1fr; }
+}
+
+/* ── Energy Source Card ── */
+.energy-card {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  position: relative;
+  box-shadow: var(--shadow-card);
+}
+.energy-card--best { border: 2px solid var(--brand-green); }
+.best-badge {
+  position: absolute;
+  top: -10px;
+  inset-inline-end: var(--space-3);
+  background: var(--brand-green);
+  color: var(--color-text-inverse);
+  font-size: 0.625rem;
+  padding: 2px 8px;
+  border-radius: var(--radius-full);
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+.energy-card__header {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+  margin-bottom: var(--space-3);
+}
+.energy-card__icon { font-size: 1.125rem; }
+.energy-card__name {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-text-heading);
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+}
+.energy-card__cost {
+  font-size: 1.75rem;
+  font-weight: 800;
+  color: var(--color-text-body);
+  line-height: 1;
+}
+.energy-card__unit {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-bottom: var(--space-3);
+}
+.energy-card__meta {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin-top: var(--space-1);
+}
+.energy-card__meta--highlight {
+  color: var(--brand-green);
+  font-weight: 600;
+  margin-top: var(--space-2);
+}
+.energy-card__meta--warning {
+  color: var(--brand-red);
+  font-weight: 700;
+}
+.energy-card__meta--disclaimer {
+  font-size: 0.6875rem;
+  color: var(--color-text-muted);
+  font-style: italic;
+  margin-top: var(--space-1);
+  line-height: 1.4;
+}
+
+/* ── Comparison Chart ── */
+.comparison-chart {
+  background: var(--color-card-bg);
+  border: 1px solid var(--color-card-border);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+  box-shadow: var(--shadow-card);
+}
+.comparison-chart__title {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: var(--color-text-body);
+  margin: 0 0 var(--space-4) 0;
+}
+.comparison-chart__note {
+  font-size: 0.75rem;
+  color: var(--color-text-muted);
+  margin: var(--space-2) 0 0 0;
+}
+
+/* ── Recommendation Banner ── */
+.recommendation-banner {
+  background: var(--color-state-success-bg);
+  border: 1px solid var(--color-state-success-border);
+  color: var(--color-state-success-text);
+  border-radius: var(--radius-md);
+  padding: var(--space-4) var(--space-6);
+  font-size: 0.9375rem;
+  font-weight: 500;
+}

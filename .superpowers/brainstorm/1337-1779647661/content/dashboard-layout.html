@@ -1,0 +1,129 @@
+<h2>Dashboard Layout Design</h2>
+<p class="subtitle">Left: input panel — Right: 3 energy source results + comparison chart</p>
+
+<div class="mockup">
+  <div class="mockup-header">EnergyAdvisor — Full Dashboard (1280px wide)</div>
+  <div class="mockup-body" style="padding:0;overflow:hidden">
+
+    <!-- Navbar -->
+    <div style="background:#2E3192;color:white;padding:10px 20px;display:flex;align-items:center;justify-content:space-between">
+      <span style="font-weight:700;font-size:14px">⚡ EnergyAdvisor</span>
+      <span style="font-size:11px;opacity:0.7">Smart Energy Cost Calculator</span>
+    </div>
+
+    <!-- Main layout -->
+    <div style="display:grid;grid-template-columns:280px 1fr;min-height:400px;background:#f8fafc">
+
+      <!-- LEFT: Input Panel -->
+      <div style="background:white;border-right:1px solid #e2e8f0;padding:16px">
+        <div style="font-size:11px;font-weight:700;color:#2E3192;text-transform:uppercase;margin-bottom:12px">Device Details</div>
+
+        <div style="margin-bottom:10px">
+          <div style="font-size:10px;color:#64748b;margin-bottom:3px">Device Power</div>
+          <div style="background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:6px 8px;font-size:12px;color:#1e293b">7,000 W</div>
+        </div>
+
+        <div style="margin-bottom:10px">
+          <div style="font-size:10px;color:#64748b;margin-bottom:4px">Phase Type</div>
+          <div style="display:flex;gap:4px">
+            <div style="flex:1;background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:5px;text-align:center;font-size:10px">Single ⚡</div>
+            <div style="flex:1;background:#2E3192;color:white;border-radius:4px;padding:5px;text-align:center;font-size:10px">3-Phase ⚡⚡⚡</div>
+          </div>
+        </div>
+
+        <div style="margin-bottom:10px">
+          <div style="font-size:10px;color:#64748b;margin-bottom:3px">Daily Usage (hours)</div>
+          <div style="background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:6px 8px;font-size:12px;color:#1e293b">8 h/day</div>
+        </div>
+
+        <div style="border-top:1px dashed #e2e8f0;margin:10px 0;padding-top:10px">
+          <div style="font-size:11px;font-weight:700;color:#2E3192;text-transform:uppercase;margin-bottom:8px">Pricing</div>
+
+          <div style="margin-bottom:8px">
+            <div style="font-size:10px;color:#64748b;margin-bottom:3px">Electricity (per kWh)</div>
+            <div style="background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:6px 8px;font-size:12px;color:#1e293b">$0.10</div>
+          </div>
+
+          <div style="margin-bottom:8px">
+            <div style="font-size:10px;color:#64748b;margin-bottom:3px">Diesel (per liter)</div>
+            <div style="background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:6px 8px;font-size:12px;color:#1e293b">$0.80</div>
+          </div>
+
+          <div style="margin-bottom:8px">
+            <div style="font-size:10px;color:#64748b;margin-bottom:3px">Solar Install Budget (optional)</div>
+            <div style="background:#f1f5f9;border:1px solid #e2e8f0;border-radius:4px;padding:6px 8px;font-size:12px;color:#1e293b">$8,000</div>
+          </div>
+        </div>
+
+        <div style="background:#0A823B;color:white;border-radius:6px;padding:8px;text-align:center;font-size:12px;font-weight:700;cursor:pointer">Calculate →</div>
+      </div>
+
+      <!-- RIGHT: Results -->
+      <div style="padding:16px">
+
+        <!-- 3 energy cards -->
+        <div style="display:grid;grid-template-columns:1fr 1fr 1fr;gap:10px;margin-bottom:14px">
+
+          <!-- Electricity -->
+          <div style="background:white;border-radius:8px;border:1px solid #e2e8f0;padding:12px">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+              <span style="font-size:11px;font-weight:700;color:#2E3192">⚡ Electricity</span>
+            </div>
+            <div style="font-size:20px;font-weight:800;color:#1e293b">$168</div>
+            <div style="font-size:10px;color:#64748b;margin-bottom:8px">per month</div>
+            <div style="font-size:10px;color:#64748b">Annual: <strong>$2,016</strong></div>
+            <div style="font-size:10px;color:#64748b">Daily: 56 kWh</div>
+          </div>
+
+          <!-- Generator -->
+          <div style="background:white;border-radius:8px;border:1px solid #e2e8f0;padding:12px">
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+              <span style="font-size:11px;font-weight:700;color:#F59E0B">⛽ Generator</span>
+            </div>
+            <div style="font-size:20px;font-weight:800;color:#1e293b">$336</div>
+            <div style="font-size:10px;color:#64748b;margin-bottom:8px">per month (fuel only)</div>
+            <div style="font-size:10px;color:#64748b">14 liters/day</div>
+            <div style="font-size:10px;color:#64748b">Size needed: 10 kVA</div>
+          </div>
+
+          <!-- Solar -->
+          <div style="background:white;border-radius:8px;border:2px solid #0A823B;padding:12px;position:relative">
+            <div style="position:absolute;top:-8px;right:8px;background:#0A823B;color:white;font-size:9px;padding:2px 6px;border-radius:10px;font-weight:700">BEST VALUE</div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-bottom:8px">
+              <span style="font-size:11px;font-weight:700;color:#0A823B">☀️ Solar</span>
+            </div>
+            <div style="font-size:20px;font-weight:800;color:#1e293b">$0</div>
+            <div style="font-size:10px;color:#64748b;margin-bottom:8px">per month (after install)</div>
+            <div style="font-size:10px;color:#64748b">Panels: 18 × 400W</div>
+            <div style="font-size:10px;color:#64748b">Battery: 28 kVA</div>
+            <div style="font-size:10px;color:#0A823B;font-weight:600;margin-top:4px">Payback: ~4 years</div>
+          </div>
+        </div>
+
+        <!-- Chart area -->
+        <div style="background:white;border-radius:8px;border:1px solid #e2e8f0;padding:12px">
+          <div style="font-size:11px;font-weight:700;color:#1e293b;margin-bottom:10px">5-Year Cost Comparison</div>
+          <div style="display:flex;gap:12px;align-items:flex-end;height:80px;padding-bottom:4px;border-bottom:1px solid #f1f5f9">
+            <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+              <div style="width:40px;background:#2E3192;height:60px;border-radius:3px 3px 0 0"></div>
+              <div style="font-size:9px;color:#64748b">Grid</div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+              <div style="width:40px;background:#F59E0B;height:80px;border-radius:3px 3px 0 0"></div>
+              <div style="font-size:9px;color:#64748b">Generator</div>
+            </div>
+            <div style="display:flex;flex-direction:column;align-items:center;gap:4px">
+              <div style="width:40px;background:#0A823B;height:25px;border-radius:3px 3px 0 0"></div>
+              <div style="font-size:9px;color:#64748b">Solar</div>
+            </div>
+          </div>
+          <div style="font-size:9px;color:#94a3b8;margin-top:4px">Solar includes installation cost amortized over 5 years</div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+</div>
+
+<p class="subtitle" style="margin-top:16px">Does this layout feel right? The left panel stays fixed while the right side updates live as you type.</p>
