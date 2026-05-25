@@ -63,7 +63,7 @@ export function ComparisonChart({ recommendation, hasSolarBudget }: Props) {
             width={70}
           />
           <Tooltip
-            formatter={(value: number) => [fmtXAF(value), t('chart.costLabel')]}
+            formatter={(value: number | string | Array<number | string>) => [fmtXAF(Number(value)), t('chart.costLabel')]}
           />
           <Bar dataKey="cost" radius={[4, 4, 0, 0]}>
             {data.map((entry, i) => (
