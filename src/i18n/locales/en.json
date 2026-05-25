@@ -8,7 +8,7 @@
     "singlePhase": "Single Phase",
     "threePhase": "3-Phase",
     "dailyHours": "Daily Usage (Hours)",
-    "pricing": "Pricing",
+    "pricing": "Pricing ",
     "electricityPrice": "Electricity Price (per kWh)",
     "dieselPrice": "Diesel Price (per Liter)",
     "solarBudget": "Solar Install Budget (optional, XAF)",
