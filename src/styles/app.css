@@ -4,7 +4,7 @@
 .navbar {
   background: var(--brand-blue);
   color: var(--color-text-inverse);
-  padding: 12px var(--space-6);
+  padding: 8px var(--space-6);
   display: flex;
   align-items: center;
   gap: var(--space-4);
@@ -16,6 +16,15 @@
   font-weight: 700;
   font-size: 1.125rem;
   white-space: nowrap;
+  display: flex;
+  align-items: center;
+  gap: var(--space-2);
+}
+.navbar__logo {
+  height: 52px;
+  width: auto;
+  object-fit: contain;
+  display: block;
 }
 .navbar__tagline {
   flex: 1;
