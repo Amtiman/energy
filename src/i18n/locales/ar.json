@@ -12,18 +12,14 @@
     "electricityPrice": "سعر الكهرباء (لكل كيلوواط·ساعة)",
     "dieselPrice": "سعر الديزل (للتر)",
     "solarBudget": "ميزانية تركيب الطاقة الشمسية (اختياري، ف.أ.و.م)",
-    "solarPanelCount": "عدد الألواح الشمسية",
     "solarPanelWatts": "واط لكل لوح",
     "calculatedCapacity": "← الطاقة: {{value}} كيلوواط (تلقائي)",
     "calculatedPanels": "← {{value}} لوح (تلقائي)",
-    "solarCapacity": "طاقة الطاقة الشمسية (كيلوواط)",
-    "placeholderCapacity": "مثال: 8.25",
     "placeholderWatts": "مثال: 7000",
     "placeholderHours": "مثال: 8",
     "placeholderElectricity": "مثال: 90",
     "placeholderDiesel": "مثال: 550",
     "placeholderSolar": "مثال: 2500000",
-    "placeholderPanelCount": "مثال: 20",
     "placeholderPanelWatts": "مثال: 400"
   },
   "sources": {

@@ -14,9 +14,7 @@ const BASE = {
   pricePerKwh: 0.10,
   dieselPrice: 1.00,
   solarBudget: 0,
-  solarPanelCount: 0,
   solarPanelWatts: 400,
-  solarCapacityKw: 0,
 }
 
 describe('calculateElectricity', () => {
@@ -103,25 +101,30 @@ describe('calculateSolar', () => {
     expect(r.coveragePct).toBeNull()
   })
 
-  it('uses user-specified panel count and wattage', () => {
+  it('auto-sizes panel count and capacity from per-panel wattage', () => {
     const elec = calculateElectricity(BASE)
-    const r = calculateSolar({ ...BASE, solarPanelCount: 5, solarPanelWatts: 550 }, elec)
-    expect(r.panelsNeeded).toBe(5)
+    // 1kW device / 550W per panel = 1.82 → ceil = 2 panels; 2 × 550W = 1.1 kW
+    const r = calculateSolar({ ...BASE, solarPanelWatts: 550 }, elec)
+    expect(r.panelsNeeded).toBe(2)
     expect(r.panelWatts).toBe(550)
-    expect(r.totalCapacityKw).toBeCloseTo(2.75)  // 5 × 550W = 2750W
+    expect(r.totalCapacityKw).toBeCloseTo(1.1)
   })
 
-  it('uses solarCapacityKw directly when provided, ignoring panel calc', () => {
-    const elec = calculateElectricity(BASE)
-    const r = calculateSolar({ ...BASE, solarCapacityKw: 12, solarPanelCount: 5, solarPanelWatts: 400 }, elec)
-    expect(r.totalCapacityKw).toBe(12)   // 12 kW direct override, not 5×400/1000 = 2 kW
+  it('scales panel count with device load', () => {
+    const elec = calculateElectricity({ ...BASE, watts: 4000 })
+    // 4kW device / 500W per panel = 8 panels; 8 × 500W = 4 kW
+    const r = calculateSolar({ ...BASE, watts: 4000, solarPanelWatts: 500 }, elec)
+    expect(r.panelsNeeded).toBe(8)
+    expect(r.totalCapacityKw).toBeCloseTo(4)
   })
 
   it('defaults panel wattage to 400 when solarPanelWatts is 0', () => {
     const elec = calculateElectricity(BASE)
-    const r = calculateSolar({ ...BASE, solarPanelCount: 2, solarPanelWatts: 0 }, elec)
+    const r = calculateSolar({ ...BASE, solarPanelWatts: 0 }, elec)
     expect(r.panelWatts).toBe(400)
-    expect(r.totalCapacityKw).toBeCloseTo(0.8)  // 2 × 400W = 800W
+    // 1kW device / 400W = 2.5 → ceil = 3 panels; 3 × 400W = 1.2 kW
+    expect(r.panelsNeeded).toBe(3)
+    expect(r.totalCapacityKw).toBeCloseTo(1.2)
   })
 
   it('calculates battery bank in kWh with 50% DoD and 90% efficiency', () => {
@@ -131,21 +134,17 @@ describe('calculateSolar', () => {
     expect(r.batteryKwh).toBe(23)
   })
 
-  it('calculates coverage percentage', () => {
+  it('covers 100% of peak load since the array is sized to the device', () => {
     const elec = calculateElectricity(BASE)
-    // 4 × 400W = 1.6 kW vs 1 kW device → 160% (capped at 100)
-    const full = calculateSolar({ ...BASE, solarPanelCount: 4, solarPanelWatts: 400 }, elec)
-    expect(full.coveragePct).toBe(100)
-    // 1 × 200W = 0.2 kW vs 1 kW device → 20%
-    const partial = calculateSolar({ ...BASE, solarPanelCount: 1, solarPanelWatts: 200 }, elec)
-    expect(partial.coveragePct).toBe(20)
+    // 3 × 400W = 1.2 kW ≥ 1 kW device → capped at 100%
+    const r = calculateSolar(BASE, elec)
+    expect(r.coveragePct).toBe(100)
   })
 
-  it('scales annualSavings by coverage ratio', () => {
+  it('saves the full electricity cost at 100% coverage', () => {
     const elec = calculateElectricity({ ...BASE, pricePerKwh: 90 })
-    // 0.5 kW panels vs 1 kW device → 50% coverage → savings = 50% of electricity cost
-    const r = calculateSolar({ ...BASE, solarPanelCount: 1, solarPanelWatts: 500, pricePerKwh: 90 }, elec)
-    expect(r.annualSavings).toBeCloseTo(elec.annualCost * 0.5)
+    const r = calculateSolar({ ...BASE, pricePerKwh: 90 }, elec)
+    expect(r.annualSavings).toBeCloseTo(elec.annualCost)
   })
 
   it('returns null payback when solarBudget is 0', () => {
@@ -158,7 +157,7 @@ describe('calculateSolar', () => {
   it('calculates payback when budget and full coverage provided', () => {
     // 1kW device, pricePerKwh=0.10, 10h/day → annualCost = $365
     // budget = $730, panels cover 100% → payback = 2 years
-    const inputs = { ...BASE, pricePerKwh: 0.10, solarBudget: 730, solarPanelCount: 3, solarPanelWatts: 400 }
+    const inputs = { ...BASE, pricePerKwh: 0.10, solarBudget: 730, solarPanelWatts: 400 }
     const elec = calculateElectricity(inputs)
     const r = calculateSolar(inputs, elec)
     expect(r.coveragePct).toBe(100)

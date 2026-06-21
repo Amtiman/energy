@@ -17,6 +17,12 @@ export function InputPanel({ inputs, onChange }: Props) {
     return val === 0 ? '' : String(val)
   }
 
+  // Auto-size the array to the device's peak load, rounded up to whole panels.
+  const panelsNeeded =
+    inputs.watts > 0 && inputs.solarPanelWatts > 0
+      ? Math.ceil(inputs.watts / inputs.solarPanelWatts)
+      : 0
+
   return (
     <aside className="input-panel">
       <h2 className="section-label">{t('inputPanel.title')}</h2>
@@ -108,18 +114,6 @@ export function InputPanel({ inputs, onChange }: Props) {
       </label>
 
       <label className="field">
-        <span className="field-label">{t('inputPanel.solarPanelCount')}</span>
-        <input
-          type="number"
-          min={0}
-          value={numericValue(inputs.solarPanelCount)}
-          onChange={e => update('solarPanelCount', Number(e.target.value))}
-          className="field-input"
-          placeholder={t('inputPanel.placeholderPanelCount')}
-        />
-      </label>
-
-      <label className="field">
         <span className="field-label">{t('inputPanel.solarPanelWatts')}</span>
         <input
           type="number"
@@ -131,33 +125,17 @@ export function InputPanel({ inputs, onChange }: Props) {
         />
       </label>
 
-      {inputs.solarPanelCount > 0 && inputs.solarPanelWatts > 0 && (
-        <p className="field-hint">
-          {t('inputPanel.calculatedCapacity', {
-            value: ((inputs.solarPanelCount * inputs.solarPanelWatts) / 1000).toFixed(2),
-          })}
-        </p>
-      )}
-
-      <label className="field">
-        <span className="field-label">{t('inputPanel.solarCapacity')}</span>
-        <input
-          type="number"
-          min={0}
-          step={0.1}
-          value={numericValue(inputs.solarCapacityKw)}
-          onChange={e => update('solarCapacityKw', Number(e.target.value))}
-          className="field-input"
-          placeholder={t('inputPanel.placeholderCapacity')}
-        />
-      </label>
-
-      {inputs.solarCapacityKw > 0 && inputs.solarPanelWatts > 0 && (
-        <p className="field-hint">
-          {t('inputPanel.calculatedPanels', {
-            value: Math.ceil((inputs.solarCapacityKw * 1000) / inputs.solarPanelWatts),
-          })}
-        </p>
+      {inputs.watts > 0 && inputs.solarPanelWatts > 0 && (
+        <>
+          <p className="field-hint">
+            {t('inputPanel.calculatedCapacity', {
+              value: ((panelsNeeded * inputs.solarPanelWatts) / 1000).toFixed(2),
+            })}
+          </p>
+          <p className="field-hint">
+            {t('inputPanel.calculatedPanels', { value: panelsNeeded })}
+          </p>
+        </>
       )}
     </aside>
   )

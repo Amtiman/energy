@@ -12,9 +12,7 @@ const DEFAULT_INPUTS: EnergyInputs = {
   pricePerKwh: 0,
   dieselPrice: 0,
   solarBudget: 0,
-  solarPanelCount: 0,
   solarPanelWatts: 400,
-  solarCapacityKw: 0,
 }
 
 export function Dashboard() {

@@ -12,18 +12,14 @@
     "electricityPrice": "Prix de l'électricité (par kWh)",
     "dieselPrice": "Prix du diesel (par litre)",
     "solarBudget": "Budget installation solaire (optionnel, XAF)",
-    "solarPanelCount": "Nombre de panneaux solaires",
     "solarPanelWatts": "Watts par panneau",
     "calculatedCapacity": "→ Capacité : {{value}} kW (auto)",
     "calculatedPanels": "→ {{value}} panneaux (auto)",
-    "solarCapacity": "Capacité solaire (kW)",
-    "placeholderCapacity": "ex : 8,25",
     "placeholderWatts": "ex : 7000",
     "placeholderHours": "ex : 8",
     "placeholderElectricity": "ex : 90",
     "placeholderDiesel": "ex : 550",
     "placeholderSolar": "ex : 2500000",
-    "placeholderPanelCount": "ex : 20",
     "placeholderPanelWatts": "ex : 400"
   },
   "sources": {

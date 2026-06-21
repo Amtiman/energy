@@ -7,9 +7,7 @@ export interface EnergyInputs {
   pricePerKwh: number
   dieselPrice: number
   solarBudget: number
-  solarPanelCount: number
-  solarPanelWatts: number
-  solarCapacityKw: number   // direct override; if > 0 takes priority over panel calc
+  solarPanelWatts: number   // user-entered capacity per panel; drives auto panel count + array capacity
 }
 
 export interface ElectricityResult {
@@ -109,14 +107,10 @@ export function calculateSolar(inputs: EnergyInputs, electricity: ElectricityRes
   const kW = inputs.watts / 1000
   const panelWatts = inputs.solarPanelWatts > 0 ? inputs.solarPanelWatts : 400
 
-  // Capacity priority: direct entry > panel count × watts
-  const panelCalcKw = (inputs.solarPanelCount * panelWatts) / 1000
-  const totalCapacityKw = inputs.solarCapacityKw > 0 ? inputs.solarCapacityKw : panelCalcKw
-
-  // Panel count: back-calculate from capacity+watts when capacity is directly entered
-  const panelsNeeded = inputs.solarCapacityKw > 0 && inputs.solarPanelWatts > 0
-    ? Math.ceil((inputs.solarCapacityKw * 1000) / panelWatts)
-    : inputs.solarPanelCount
+  // Size the array to match the device's peak load, rounded up to whole panels.
+  // Quantity and array capacity are both derived from the per-panel wattage.
+  const panelsNeeded = Math.ceil((kW * 1000) / panelWatts)
+  const totalCapacityKw = (panelsNeeded * panelWatts) / 1000
 
   // Coverage: what % of device peak load the panels can supply
   const coveragePct = panelsNeeded > 0

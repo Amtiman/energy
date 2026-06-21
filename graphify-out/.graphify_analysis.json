@@ -1,0 +1,464 @@
+{
+  "communities": {
+    "0": [
+      "components_energysourcecard",
+      "components_energysourcecard_fmt",
+      "components_energysourcecard_props",
+      "components_inputpanel",
+      "components_inputpanel_props",
+      "pages_dashboard",
+      "pages_dashboard_dashboard",
+      "pages_dashboard_default_inputs",
+      "src_app",
+      "src_app_app",
+      "src_app_languages",
+      "src_main",
+      "utils_energycalculations",
+      "utils_energycalculations_allresults",
+      "utils_energycalculations_calculateall",
+      "utils_energycalculations_calculateelectricity",
+      "utils_energycalculations_calculategenerator",
+      "utils_energycalculations_calculaterecommendation",
+      "utils_energycalculations_calculatesolar",
+      "utils_energycalculations_electricityresult",
+      "utils_energycalculations_energyinputs",
+      "utils_energycalculations_generatorresult",
+      "utils_energycalculations_solarresult",
+      "utils_energycalculations_standard_kva",
+      "utils_energycalculations_starting_factor",
+      "utils_energycalculations_test_base"
+    ],
+    "1": [
+      "locales_ar_chart",
+      "locales_ar_chart_costlabel",
+      "locales_ar_chart_note",
+      "locales_ar_chart_title",
+      "locales_ar_inputpanel",
+      "locales_ar_inputpanel_calculatedcapacity",
+      "locales_ar_inputpanel_calculatedpanels",
+      "locales_ar_inputpanel_dailyhours",
+      "locales_ar_inputpanel_devicepower",
+      "locales_ar_inputpanel_dieselprice",
+      "locales_ar_inputpanel_phasetype",
+      "locales_ar_inputpanel_placeholdercapacity",
+      "locales_ar_inputpanel_placeholderdiesel",
+      "locales_ar_inputpanel_placeholderelectricity",
+      "locales_ar_inputpanel_placeholderhours",
+      "locales_ar_inputpanel_placeholderpanelcount",
+      "locales_ar_inputpanel_placeholdersolar",
+      "locales_ar_inputpanel_placeholderwatts",
+      "locales_ar_inputpanel_pricing",
+      "locales_ar_inputpanel_singlephase",
+      "locales_ar_inputpanel_solarbudget",
+      "locales_ar_inputpanel_solarcapacity",
+      "locales_ar_inputpanel_solarpanelcount",
+      "locales_ar_inputpanel_solarpanelwatts",
+      "locales_ar_inputpanel_threephase"
+    ],
+    "2": [
+      "locales_en_inputpanel",
+      "locales_en_inputpanel_calculatedcapacity",
+      "locales_en_inputpanel_calculatedpanels",
+      "locales_en_inputpanel_dailyhours",
+      "locales_en_inputpanel_devicepower",
+      "locales_en_inputpanel_dieselprice",
+      "locales_en_inputpanel_electricityprice",
+      "locales_en_inputpanel_phasetype",
+      "locales_en_inputpanel_placeholdercapacity",
+      "locales_en_inputpanel_placeholderdiesel",
+      "locales_en_inputpanel_placeholderelectricity",
+      "locales_en_inputpanel_placeholderhours",
+      "locales_en_inputpanel_placeholderpanelcount",
+      "locales_en_inputpanel_placeholderpanelwatts",
+      "locales_en_inputpanel_placeholdersolar",
+      "locales_en_inputpanel_placeholderwatts",
+      "locales_en_inputpanel_pricing",
+      "locales_en_inputpanel_singlephase",
+      "locales_en_inputpanel_solarbudget",
+      "locales_en_inputpanel_solarcapacity",
+      "locales_en_inputpanel_solarpanelcount",
+      "locales_en_inputpanel_solarpanelwatts",
+      "locales_en_inputpanel_threephase"
+    ],
+    "3": [
+      "locales_fr_inputpanel",
+      "locales_fr_inputpanel_calculatedcapacity",
+      "locales_fr_inputpanel_calculatedpanels",
+      "locales_fr_inputpanel_dailyhours",
+      "locales_fr_inputpanel_devicepower",
+      "locales_fr_inputpanel_dieselprice",
+      "locales_fr_inputpanel_electricityprice",
+      "locales_fr_inputpanel_phasetype",
+      "locales_fr_inputpanel_placeholdercapacity",
+      "locales_fr_inputpanel_placeholderdiesel",
+      "locales_fr_inputpanel_placeholderelectricity",
+      "locales_fr_inputpanel_placeholderhours",
+      "locales_fr_inputpanel_placeholderpanelcount",
+      "locales_fr_inputpanel_placeholderpanelwatts",
+      "locales_fr_inputpanel_placeholdersolar",
+      "locales_fr_inputpanel_placeholderwatts",
+      "locales_fr_inputpanel_pricing",
+      "locales_fr_inputpanel_singlephase",
+      "locales_fr_inputpanel_solarbudget",
+      "locales_fr_inputpanel_solarcapacity",
+      "locales_fr_inputpanel_solarpanelcount",
+      "locales_fr_inputpanel_solarpanelwatts",
+      "locales_fr_inputpanel_threephase"
+    ],
+    "4": [
+      "package",
+      "package_dependencies",
+      "package_dependencies_i18next",
+      "package_dependencies_react",
+      "package_dependencies_react_dom",
+      "package_dependencies_react_i18next",
+      "package_dependencies_recharts",
+      "package_name",
+      "package_private",
+      "package_scripts",
+      "package_scripts_build",
+      "package_scripts_dev",
+      "package_scripts_lint",
+      "package_scripts_preview",
+      "package_scripts_test",
+      "package_scripts_test_ui",
+      "package_scripts_test_watch",
+      "package_type",
+      "package_version"
+    ],
+    "5": [
+      "tsconfig_app",
+      "tsconfig_app_compileroptions",
+      "tsconfig_app_compileroptions_allowimportingtsextensions",
+      "tsconfig_app_compileroptions_erasablesyntaxonly",
+      "tsconfig_app_compileroptions_jsx",
+      "tsconfig_app_compileroptions_lib",
+      "tsconfig_app_compileroptions_module",
+      "tsconfig_app_compileroptions_moduledetection",
+      "tsconfig_app_compileroptions_moduleresolution",
+      "tsconfig_app_compileroptions_noemit",
+      "tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "tsconfig_app_compileroptions_nounusedlocals",
+      "tsconfig_app_compileroptions_nounusedparameters",
+      "tsconfig_app_compileroptions_skiplibcheck",
+      "tsconfig_app_compileroptions_target",
+      "tsconfig_app_compileroptions_tsbuildinfofile",
+      "tsconfig_app_compileroptions_types",
+      "tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "tsconfig_app_include"
+    ],
+    "6": [
+      "tsconfig_node",
+      "tsconfig_node_compileroptions",
+      "tsconfig_node_compileroptions_allowimportingtsextensions",
+      "tsconfig_node_compileroptions_erasablesyntaxonly",
+      "tsconfig_node_compileroptions_lib",
+      "tsconfig_node_compileroptions_module",
+      "tsconfig_node_compileroptions_moduledetection",
+      "tsconfig_node_compileroptions_moduleresolution",
+      "tsconfig_node_compileroptions_noemit",
+      "tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "tsconfig_node_compileroptions_nounusedlocals",
+      "tsconfig_node_compileroptions_nounusedparameters",
+      "tsconfig_node_compileroptions_skiplibcheck",
+      "tsconfig_node_compileroptions_target",
+      "tsconfig_node_compileroptions_tsbuildinfofile",
+      "tsconfig_node_compileroptions_types",
+      "tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "tsconfig_node_include"
+    ],
+    "7": [
+      "components_comparisonchart",
+      "components_comparisonchart_chart_colors",
+      "components_comparisonchart_props",
+      "components_recommendationbanner_props",
+      "i18n_index",
+      "locales_ar",
+      "locales_ar_appname",
+      "locales_ar_bestvalue",
+      "locales_ar_recommendation",
+      "locales_ar_recommendation_solarpartial",
+      "locales_ar_sources",
+      "locales_ar_sources_electricity",
+      "locales_ar_sources_generator",
+      "locales_ar_sources_solar",
+      "locales_ar_tagline",
+      "utils_energycalculations_recommendationresult",
+      "utils_format",
+      "utils_format_fmtxaf"
+    ],
+    "8": [
+      "locales_ar_metrics",
+      "locales_ar_metrics_annualcost",
+      "locales_ar_metrics_batterysize",
+      "locales_ar_metrics_coverage",
+      "locales_ar_metrics_dailykwh",
+      "locales_ar_metrics_enterbudget",
+      "locales_ar_metrics_enterpanels",
+      "locales_ar_metrics_installcost",
+      "locales_ar_metrics_litersperday",
+      "locales_ar_metrics_monthlyequiv",
+      "locales_ar_metrics_panelscount",
+      "locales_ar_metrics_payback",
+      "locales_ar_metrics_paybacknote",
+      "locales_ar_metrics_permonth",
+      "locales_ar_metrics_sizeneeded",
+      "locales_ar_metrics_totalcapacity"
+    ],
+    "9": [
+      "locales_en_metrics",
+      "locales_en_metrics_annualcost",
+      "locales_en_metrics_batterysize",
+      "locales_en_metrics_coverage",
+      "locales_en_metrics_dailykwh",
+      "locales_en_metrics_enterbudget",
+      "locales_en_metrics_enterpanels",
+      "locales_en_metrics_installcost",
+      "locales_en_metrics_litersperday",
+      "locales_en_metrics_monthlyequiv",
+      "locales_en_metrics_panelscount",
+      "locales_en_metrics_payback",
+      "locales_en_metrics_paybacknote",
+      "locales_en_metrics_permonth",
+      "locales_en_metrics_sizeneeded",
+      "locales_en_metrics_totalcapacity"
+    ],
+    "10": [
+      "locales_fr_metrics",
+      "locales_fr_metrics_annualcost",
+      "locales_fr_metrics_batterysize",
+      "locales_fr_metrics_coverage",
+      "locales_fr_metrics_dailykwh",
+      "locales_fr_metrics_enterbudget",
+      "locales_fr_metrics_enterpanels",
+      "locales_fr_metrics_installcost",
+      "locales_fr_metrics_litersperday",
+      "locales_fr_metrics_monthlyequiv",
+      "locales_fr_metrics_panelscount",
+      "locales_fr_metrics_payback",
+      "locales_fr_metrics_paybacknote",
+      "locales_fr_metrics_permonth",
+      "locales_fr_metrics_sizeneeded",
+      "locales_fr_metrics_totalcapacity"
+    ],
+    "11": [
+      "package_devdependencies",
+      "package_devdependencies_eslint",
+      "package_devdependencies_eslint_js",
+      "package_devdependencies_eslint_plugin_react_hooks",
+      "package_devdependencies_eslint_plugin_react_refresh",
+      "package_devdependencies_globals",
+      "package_devdependencies_jsdom",
+      "package_devdependencies_types_node",
+      "package_devdependencies_types_react",
+      "package_devdependencies_typescript",
+      "package_devdependencies_typescript_eslint",
+      "package_devdependencies_vite",
+      "package_devdependencies_vitejs_plugin_react",
+      "package_devdependencies_vitest",
+      "package_devdependencies_vitest_ui"
+    ],
+    "12": [
+      "locales_en",
+      "locales_en_appname",
+      "locales_en_bestvalue",
+      "locales_en_chart",
+      "locales_en_chart_costlabel",
+      "locales_en_chart_note",
+      "locales_en_chart_title",
+      "locales_en_recommendation",
+      "locales_en_recommendation_solarpartial",
+      "locales_en_sources",
+      "locales_en_sources_electricity",
+      "locales_en_sources_generator",
+      "locales_en_sources_solar",
+      "locales_en_tagline"
+    ],
+    "13": [
+      "locales_fr",
+      "locales_fr_appname",
+      "locales_fr_bestvalue",
+      "locales_fr_chart",
+      "locales_fr_chart_costlabel",
+      "locales_fr_chart_note",
+      "locales_fr_chart_title",
+      "locales_fr_recommendation",
+      "locales_fr_recommendation_solarpartial",
+      "locales_fr_sources",
+      "locales_fr_sources_electricity",
+      "locales_fr_sources_generator",
+      "locales_fr_sources_solar",
+      "locales_fr_tagline"
+    ],
+    "14": [
+      "comparisonchart_tsx",
+      "dashboard_tsx",
+      "energycalculations_ts",
+      "energysourcecard_tsx",
+      "inputpanel_tsx",
+      "recommendationbanner_tsx"
+    ],
+    "15": [
+      "app_structure_brainstorm",
+      "dashboard_layout_mockup",
+      "energy_advisor_design_spec",
+      "energy_advisor_implementation_plan"
+    ],
+    "16": [
+      "claude_settings_local",
+      "claude_settings_local_permissions",
+      "claude_settings_local_permissions_allow"
+    ],
+    "17": [
+      "tsconfig",
+      "tsconfig_files",
+      "tsconfig_references"
+    ],
+    "18": [
+      "app_css",
+      "brand_css"
+    ],
+    "19": [
+      "eslint_config"
+    ],
+    "20": [
+      "vite_config"
+    ]
+  },
+  "cohesion": {
+    "0": 0.13538461538461538,
+    "1": 0.08,
+    "2": 0.08695652173913043,
+    "3": 0.08695652173913043,
+    "4": 0.10526315789473684,
+    "5": 0.10526315789473684,
+    "6": 0.1111111111111111,
+    "7": 0.16339869281045752,
+    "8": 0.125,
+    "9": 0.125,
+    "10": 0.125,
+    "11": 0.13333333333333333,
+    "12": 0.17582417582417584,
+    "13": 0.17582417582417584,
+    "14": 0.3333333333333333,
+    "15": 0.5,
+    "16": 0.6666666666666666,
+    "17": 0.6666666666666666,
+    "18": 1.0,
+    "19": 1.0,
+    "20": 1.0
+  },
+  "gods": [
+    {
+      "id": "locales_en_inputpanel",
+      "label": "inputPanel",
+      "degree": 24
+    },
+    {
+      "id": "locales_fr_inputpanel",
+      "label": "inputPanel",
+      "degree": 24
+    },
+    {
+      "id": "locales_ar_inputpanel",
+      "label": "inputPanel",
+      "degree": 23
+    },
+    {
+      "id": "tsconfig_app_compileroptions",
+      "label": "compilerOptions",
+      "degree": 17
+    },
+    {
+      "id": "locales_ar_metrics",
+      "label": "metrics",
+      "degree": 16
+    },
+    {
+      "id": "locales_en_metrics",
+      "label": "metrics",
+      "degree": 16
+    },
+    {
+      "id": "locales_fr_metrics",
+      "label": "metrics",
+      "degree": 16
+    },
+    {
+      "id": "tsconfig_node_compileroptions",
+      "label": "compilerOptions",
+      "degree": 16
+    },
+    {
+      "id": "locales_ar_recommendation",
+      "label": "recommendation",
+      "degree": 11
+    },
+    {
+      "id": "package_scripts",
+      "label": "scripts",
+      "degree": 8
+    }
+  ],
+  "surprises": [
+    {
+      "source": "Energy Advisor \u2014 Design Spec",
+      "target": "Dashboard Layout Mockup",
+      "source_files": [
+        "docs/superpowers/specs/2026-05-24-energy-advisor-design.md",
+        ".superpowers/brainstorm/1337-1779647661/content/dashboard-layout.html"
+      ],
+      "confidence": "INFERRED",
+      "relation": "conceptually_related_to",
+      "why": "inferred connection - not explicitly stated in source; connects across different repos/directories"
+    },
+    {
+      "source": "Props",
+      "target": "RecommendationResult",
+      "source_files": [
+        "src/components/ComparisonChart.tsx",
+        "src/utils/energyCalculations.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `Props` unexpectedly reaches hub `RecommendationResult`"
+    },
+    {
+      "source": "Props",
+      "target": "RecommendationResult",
+      "source_files": [
+        "src/components/RecommendationBanner.tsx",
+        "src/utils/energyCalculations.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "references",
+      "why": "peripheral node `Props` unexpectedly reaches hub `RecommendationResult`"
+    },
+    {
+      "source": "Dashboard Page",
+      "target": "Energy Calculations Engine",
+      "source_files": [
+        "src/pages/Dashboard.tsx",
+        "src/utils/energyCalculations.ts"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "calls",
+      "why": "peripheral node `Energy Calculations Engine` unexpectedly reaches hub `Dashboard Page`"
+    },
+    {
+      "source": "Dashboard Page",
+      "target": "Comparison Chart Component",
+      "source_files": [
+        "src/pages/Dashboard.tsx",
+        "src/components/ComparisonChart.tsx"
+      ],
+      "confidence": "EXTRACTED",
+      "relation": "implements",
+      "why": "peripheral node `Comparison Chart Component` unexpectedly reaches hub `Dashboard Page`"
+    }
+  ],
+  "tokens": {
+    "input": 67926,
+    "output": 2370
+  }
+}

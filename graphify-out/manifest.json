@@ -1,0 +1,107 @@
+{
+  "C:\\Users\\lenovo\\React-Projects\\energy\\.claude\\settings.local.json": {
+    "mtime": 1779698112.6610427,
+    "ast_hash": "7df85b8ab7603fbec149ae3b3f752e11",
+    "semantic_hash": "7df85b8ab7603fbec149ae3b3f752e11"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\eslint.config.js": {
+    "mtime": 1779651259.3954885,
+    "ast_hash": "0355276bc79439afe3c53e3a2470ca1e",
+    "semantic_hash": "0355276bc79439afe3c53e3a2470ca1e"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\package.json": {
+    "mtime": 1779651931.873435,
+    "ast_hash": "3b9b654aa1d881b9d76aefb9f9cdaf22",
+    "semantic_hash": "3b9b654aa1d881b9d76aefb9f9cdaf22"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\src\\App.tsx": {
+    "mtime": 1779705968.453827,
+    "ast_hash": "fbd03148cb64c1d7e228084687db4b9c",
+    "semantic_hash": "fbd03148cb64c1d7e228084687db4b9c"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\src\\components\\ComparisonChart.tsx": {
+    "mtime": 1779702453.4010334,
+    "ast_hash": "95161200a6ba8bd5b7e628c60add3696",
+    "semantic_hash": "95161200a6ba8bd5b7e628c60add3696"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\src\\components\\EnergySourceCard.tsx": {
+    "mtime": 1779697732.1871994,
+    "ast_hash": "4be1f8f09bae5e65773f93d07dc7e1bd",
+    "semantic_hash": "4be1f8f09bae5e65773f93d07dc7e1bd"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\src\\components\\InputPanel.tsx": {
+    "mtime": 1779696876.1743956,
+    "ast_hash": "de4cad9a9354e1248bd5d9625a115b1e",
+    "semantic_hash": "de4cad9a9354e1248bd5d9625a115b1e"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\src\\components\\RecommendationBanner.tsx": {
+    "mtime": 1779696591.2483768,
+    "ast_hash": "d7dd3c82d6e81043306c7a4390a505e1",
+    "semantic_hash": "d7dd3c82d6e81043306c7a4390a505e1"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\src\\i18n\\index.ts": {
+    "mtime": 1779655507.9892783,
+    "ast_hash": "598a294e9e2a9e3d08b6b90c93fdbe77",
+    "semantic_hash": "598a294e9e2a9e3d08b6b90c93fdbe77"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\src\\i18n\\locales\\ar.json": {
+    "mtime": 1779697726.3964777,
+    "ast_hash": "f7d6292dc1820d704662be5286a0a95a",
+    "semantic_hash": "f7d6292dc1820d704662be5286a0a95a"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\src\\i18n\\locales\\en.json": {
+    "mtime": 1779705545.9054294,
+    "ast_hash": "d98c7b05f06a590f537ec153dc27e471",
+    "semantic_hash": "d98c7b05f06a590f537ec153dc27e471"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\src\\i18n\\locales\\fr.json": {
+    "mtime": 1779704273.8604977,
+    "ast_hash": "82a30a8c4c0f6cc4e604d426a9e96803",
+    "semantic_hash": "82a30a8c4c0f6cc4e604d426a9e96803"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\src\\main.tsx": {
+    "mtime": 1779659305.9333012,
+    "ast_hash": "06551130b6ca175ec72ed54c612f58f3",
+    "semantic_hash": "06551130b6ca175ec72ed54c612f58f3"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\src\\pages\\Dashboard.tsx": {
+    "mtime": 1779696582.1854815,
+    "ast_hash": "f2fe4a67b0601a3111ad8c042a397110",
+    "semantic_hash": "f2fe4a67b0601a3111ad8c042a397110"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\src\\utils\\energyCalculations.test.ts": {
+    "mtime": 1779695842.7425728,
+    "ast_hash": "9ddc7a261e49ea69c070a821e201e877",
+    "semantic_hash": "9ddc7a261e49ea69c070a821e201e877"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\src\\utils\\energyCalculations.ts": {
+    "mtime": 1779696855.4285667,
+    "ast_hash": "03bab345f8b008efef6bff4c4ce64097",
+    "semantic_hash": "03bab345f8b008efef6bff4c4ce64097"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\src\\utils\\format.ts": {
+    "mtime": 1779684384.3702183,
+    "ast_hash": "eead6dfb4d8fe8ceb2a9c0f811720728",
+    "semantic_hash": "eead6dfb4d8fe8ceb2a9c0f811720728"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\tsconfig.app.json": {
+    "mtime": 1779651259.407976,
+    "ast_hash": "136630b5accce1ca50663df229534a26",
+    "semantic_hash": "136630b5accce1ca50663df229534a26"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\tsconfig.json": {
+    "mtime": 1779651259.407976,
+    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "semantic_hash": "a3d39fa780ebff65444de257f291ce6c"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\tsconfig.node.json": {
+    "mtime": 1779651259.4091241,
+    "ast_hash": "70bdd0a673bcfc0e828080b306e7c680",
+    "semantic_hash": "70bdd0a673bcfc0e828080b306e7c680"
+  },
+  "C:\\Users\\lenovo\\React-Projects\\energy\\vite.config.ts": {
+    "mtime": 1779702434.6897874,
+    "ast_hash": "7fc406dae98c1d2db35025f764884cc3",
+    "semantic_hash": "7fc406dae98c1d2db35025f764884cc3"
+  }
+}

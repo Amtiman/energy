@@ -1,0 +1,5795 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {},
+  "nodes": [
+    {
+      "label": "settings.local.json",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L1",
+      "id": "claude_settings_local",
+      "community": 16,
+      "norm_label": "settings.local.json"
+    },
+    {
+      "label": "permissions",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L2",
+      "id": "claude_settings_local_permissions",
+      "community": 16,
+      "norm_label": "permissions"
+    },
+    {
+      "label": "allow",
+      "file_type": "code",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L3",
+      "id": "claude_settings_local_permissions_allow",
+      "community": 16,
+      "norm_label": "allow"
+    },
+    {
+      "label": "eslint.config.js",
+      "file_type": "code",
+      "source_file": "eslint.config.js",
+      "source_location": "L1",
+      "id": "eslint_config",
+      "community": 19,
+      "norm_label": "eslint.config.js"
+    },
+    {
+      "label": "package.json",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L1",
+      "id": "package",
+      "community": 4,
+      "norm_label": "package.json"
+    },
+    {
+      "label": "name",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "id": "package_name",
+      "community": 4,
+      "norm_label": "name"
+    },
+    {
+      "label": "private",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "id": "package_private",
+      "community": 4,
+      "norm_label": "private"
+    },
+    {
+      "label": "version",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "id": "package_version",
+      "community": 4,
+      "norm_label": "version"
+    },
+    {
+      "label": "type",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "id": "package_type",
+      "community": 4,
+      "norm_label": "type"
+    },
+    {
+      "label": "scripts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "id": "package_scripts",
+      "community": 4,
+      "norm_label": "scripts"
+    },
+    {
+      "label": "dev",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "id": "package_scripts_dev",
+      "community": 4,
+      "norm_label": "dev"
+    },
+    {
+      "label": "build",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "id": "package_scripts_build",
+      "community": 4,
+      "norm_label": "build"
+    },
+    {
+      "label": "lint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "id": "package_scripts_lint",
+      "community": 4,
+      "norm_label": "lint"
+    },
+    {
+      "label": "preview",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "id": "package_scripts_preview",
+      "community": 4,
+      "norm_label": "preview"
+    },
+    {
+      "label": "test",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "id": "package_scripts_test",
+      "community": 4,
+      "norm_label": "test"
+    },
+    {
+      "label": "test:watch",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "id": "package_scripts_test_watch",
+      "community": 4,
+      "norm_label": "test:watch"
+    },
+    {
+      "label": "test:ui",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "id": "package_scripts_test_ui",
+      "community": 4,
+      "norm_label": "test:ui"
+    },
+    {
+      "label": "dependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "id": "package_dependencies",
+      "community": 4,
+      "norm_label": "dependencies"
+    },
+    {
+      "label": "i18next",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "id": "package_dependencies_i18next",
+      "community": 4,
+      "norm_label": "i18next"
+    },
+    {
+      "label": "react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "id": "package_dependencies_react",
+      "community": 4,
+      "norm_label": "react"
+    },
+    {
+      "label": "react-dom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "id": "package_dependencies_react_dom",
+      "community": 4,
+      "norm_label": "react-dom"
+    },
+    {
+      "label": "react-i18next",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "id": "package_dependencies_react_i18next",
+      "community": 4,
+      "norm_label": "react-i18next"
+    },
+    {
+      "label": "recharts",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "id": "package_dependencies_recharts",
+      "community": 4,
+      "norm_label": "recharts"
+    },
+    {
+      "label": "devDependencies",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "id": "package_devdependencies",
+      "community": 11,
+      "norm_label": "devdependencies"
+    },
+    {
+      "label": "@eslint/js",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "id": "package_devdependencies_eslint_js",
+      "community": 11,
+      "norm_label": "@eslint/js"
+    },
+    {
+      "label": "@types/node",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "id": "package_devdependencies_types_node",
+      "community": 11,
+      "norm_label": "@types/node"
+    },
+    {
+      "label": "@types/react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L25",
+      "id": "package_devdependencies_types_react",
+      "community": 11,
+      "norm_label": "@types/react"
+    },
+    {
+      "label": "@vitejs/plugin-react",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "id": "package_devdependencies_vitejs_plugin_react",
+      "community": 11,
+      "norm_label": "@vitejs/plugin-react"
+    },
+    {
+      "label": "@vitest/ui",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "id": "package_devdependencies_vitest_ui",
+      "community": 11,
+      "norm_label": "@vitest/ui"
+    },
+    {
+      "label": "eslint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "id": "package_devdependencies_eslint",
+      "community": 11,
+      "norm_label": "eslint"
+    },
+    {
+      "label": "eslint-plugin-react-hooks",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "id": "package_devdependencies_eslint_plugin_react_hooks",
+      "community": 11,
+      "norm_label": "eslint-plugin-react-hooks"
+    },
+    {
+      "label": "eslint-plugin-react-refresh",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "id": "package_devdependencies_eslint_plugin_react_refresh",
+      "community": 11,
+      "norm_label": "eslint-plugin-react-refresh"
+    },
+    {
+      "label": "globals",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "id": "package_devdependencies_globals",
+      "community": 11,
+      "norm_label": "globals"
+    },
+    {
+      "label": "jsdom",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "id": "package_devdependencies_jsdom",
+      "community": 11,
+      "norm_label": "jsdom"
+    },
+    {
+      "label": "typescript",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "id": "package_devdependencies_typescript",
+      "community": 11,
+      "norm_label": "typescript"
+    },
+    {
+      "label": "typescript-eslint",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "id": "package_devdependencies_typescript_eslint",
+      "community": 11,
+      "norm_label": "typescript-eslint"
+    },
+    {
+      "label": "vite",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "id": "package_devdependencies_vite",
+      "community": 11,
+      "norm_label": "vite"
+    },
+    {
+      "label": "vitest",
+      "file_type": "code",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "id": "package_devdependencies_vitest",
+      "community": 11,
+      "norm_label": "vitest"
+    },
+    {
+      "label": "App.tsx",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L1",
+      "id": "src_app",
+      "community": 0,
+      "norm_label": "app.tsx"
+    },
+    {
+      "label": "LANGUAGES",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L6",
+      "id": "src_app_languages",
+      "community": 0,
+      "norm_label": "languages"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "src/App.tsx",
+      "source_location": "L8",
+      "id": "src_app_app",
+      "community": 0,
+      "norm_label": "app()"
+    },
+    {
+      "label": "ComparisonChart.tsx",
+      "file_type": "code",
+      "source_file": "src/components/ComparisonChart.tsx",
+      "source_location": "L1",
+      "id": "components_comparisonchart",
+      "community": 7,
+      "norm_label": "comparisonchart.tsx"
+    },
+    {
+      "label": "CHART_COLORS",
+      "file_type": "code",
+      "source_file": "src/components/ComparisonChart.tsx",
+      "source_location": "L15",
+      "id": "components_comparisonchart_chart_colors",
+      "community": 7,
+      "norm_label": "chart_colors"
+    },
+    {
+      "label": "Props",
+      "file_type": "code",
+      "source_file": "src/components/ComparisonChart.tsx",
+      "source_location": "L24",
+      "id": "components_comparisonchart_props",
+      "community": 7,
+      "norm_label": "props"
+    },
+    {
+      "label": "EnergySourceCard.tsx",
+      "file_type": "code",
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": "L1",
+      "id": "components_energysourcecard",
+      "community": 0,
+      "norm_label": "energysourcecard.tsx"
+    },
+    {
+      "label": "Props",
+      "file_type": "code",
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": "L9",
+      "id": "components_energysourcecard_props",
+      "community": 0,
+      "norm_label": "props"
+    },
+    {
+      "label": "fmt()",
+      "file_type": "code",
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": "L17",
+      "id": "components_energysourcecard_fmt",
+      "community": 0,
+      "norm_label": "fmt()"
+    },
+    {
+      "label": "InputPanel.tsx",
+      "file_type": "code",
+      "source_file": "src/components/InputPanel.tsx",
+      "source_location": "L1",
+      "id": "components_inputpanel",
+      "community": 0,
+      "norm_label": "inputpanel.tsx"
+    },
+    {
+      "label": "Props",
+      "file_type": "code",
+      "source_file": "src/components/InputPanel.tsx",
+      "source_location": "L4",
+      "id": "components_inputpanel_props",
+      "community": 0,
+      "norm_label": "props"
+    },
+    {
+      "label": "Props",
+      "file_type": "code",
+      "source_file": "src/components/RecommendationBanner.tsx",
+      "source_location": "L5",
+      "id": "components_recommendationbanner_props",
+      "community": 7,
+      "norm_label": "props"
+    },
+    {
+      "label": "index.ts",
+      "file_type": "code",
+      "source_file": "src/i18n/index.ts",
+      "source_location": "L1",
+      "id": "i18n_index",
+      "community": 7,
+      "norm_label": "index.ts"
+    },
+    {
+      "label": "ar.json",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L1",
+      "id": "locales_ar",
+      "community": 7,
+      "norm_label": "ar.json"
+    },
+    {
+      "label": "appName",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L2",
+      "id": "locales_ar_appname",
+      "community": 7,
+      "norm_label": "appname"
+    },
+    {
+      "label": "tagline",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L3",
+      "id": "locales_ar_tagline",
+      "community": 7,
+      "norm_label": "tagline"
+    },
+    {
+      "label": "inputPanel",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L4",
+      "id": "locales_ar_inputpanel",
+      "community": 1,
+      "norm_label": "inputpanel"
+    },
+    {
+      "label": "devicePower",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L6",
+      "id": "locales_ar_inputpanel_devicepower",
+      "community": 1,
+      "norm_label": "devicepower"
+    },
+    {
+      "label": "phaseType",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L7",
+      "id": "locales_ar_inputpanel_phasetype",
+      "community": 1,
+      "norm_label": "phasetype"
+    },
+    {
+      "label": "singlePhase",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L8",
+      "id": "locales_ar_inputpanel_singlephase",
+      "community": 1,
+      "norm_label": "singlephase"
+    },
+    {
+      "label": "threePhase",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L9",
+      "id": "locales_ar_inputpanel_threephase",
+      "community": 1,
+      "norm_label": "threephase"
+    },
+    {
+      "label": "dailyHours",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L10",
+      "id": "locales_ar_inputpanel_dailyhours",
+      "community": 1,
+      "norm_label": "dailyhours"
+    },
+    {
+      "label": "pricing",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L11",
+      "id": "locales_ar_inputpanel_pricing",
+      "community": 1,
+      "norm_label": "pricing"
+    },
+    {
+      "label": "dieselPrice",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L13",
+      "id": "locales_ar_inputpanel_dieselprice",
+      "community": 1,
+      "norm_label": "dieselprice"
+    },
+    {
+      "label": "solarBudget",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L14",
+      "id": "locales_ar_inputpanel_solarbudget",
+      "community": 1,
+      "norm_label": "solarbudget"
+    },
+    {
+      "label": "solarPanelCount",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L15",
+      "id": "locales_ar_inputpanel_solarpanelcount",
+      "community": 1,
+      "norm_label": "solarpanelcount"
+    },
+    {
+      "label": "solarPanelWatts",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L16",
+      "id": "locales_ar_inputpanel_solarpanelwatts",
+      "community": 1,
+      "norm_label": "solarpanelwatts"
+    },
+    {
+      "label": "calculatedCapacity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L17",
+      "id": "locales_ar_inputpanel_calculatedcapacity",
+      "community": 1,
+      "norm_label": "calculatedcapacity"
+    },
+    {
+      "label": "calculatedPanels",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L18",
+      "id": "locales_ar_inputpanel_calculatedpanels",
+      "community": 1,
+      "norm_label": "calculatedpanels"
+    },
+    {
+      "label": "solarCapacity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L19",
+      "id": "locales_ar_inputpanel_solarcapacity",
+      "community": 1,
+      "norm_label": "solarcapacity"
+    },
+    {
+      "label": "placeholderCapacity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L20",
+      "id": "locales_ar_inputpanel_placeholdercapacity",
+      "community": 1,
+      "norm_label": "placeholdercapacity"
+    },
+    {
+      "label": "placeholderWatts",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L21",
+      "id": "locales_ar_inputpanel_placeholderwatts",
+      "community": 1,
+      "norm_label": "placeholderwatts"
+    },
+    {
+      "label": "placeholderHours",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L22",
+      "id": "locales_ar_inputpanel_placeholderhours",
+      "community": 1,
+      "norm_label": "placeholderhours"
+    },
+    {
+      "label": "placeholderElectricity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L23",
+      "id": "locales_ar_inputpanel_placeholderelectricity",
+      "community": 1,
+      "norm_label": "placeholderelectricity"
+    },
+    {
+      "label": "placeholderDiesel",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L24",
+      "id": "locales_ar_inputpanel_placeholderdiesel",
+      "community": 1,
+      "norm_label": "placeholderdiesel"
+    },
+    {
+      "label": "placeholderSolar",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L25",
+      "id": "locales_ar_inputpanel_placeholdersolar",
+      "community": 1,
+      "norm_label": "placeholdersolar"
+    },
+    {
+      "label": "placeholderPanelCount",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L26",
+      "id": "locales_ar_inputpanel_placeholderpanelcount",
+      "community": 1,
+      "norm_label": "placeholderpanelcount"
+    },
+    {
+      "label": "sources",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L29",
+      "id": "locales_ar_sources",
+      "community": 7,
+      "norm_label": "sources"
+    },
+    {
+      "label": "electricity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L30",
+      "id": "locales_ar_sources_electricity",
+      "community": 7,
+      "norm_label": "electricity"
+    },
+    {
+      "label": "generator",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L31",
+      "id": "locales_ar_sources_generator",
+      "community": 7,
+      "norm_label": "generator"
+    },
+    {
+      "label": "solar",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L32",
+      "id": "locales_ar_sources_solar",
+      "community": 7,
+      "norm_label": "solar"
+    },
+    {
+      "label": "metrics",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L34",
+      "id": "locales_ar_metrics",
+      "community": 8,
+      "norm_label": "metrics"
+    },
+    {
+      "label": "perMonth",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L35",
+      "id": "locales_ar_metrics_permonth",
+      "community": 8,
+      "norm_label": "permonth"
+    },
+    {
+      "label": "annualCost",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L36",
+      "id": "locales_ar_metrics_annualcost",
+      "community": 8,
+      "norm_label": "annualcost"
+    },
+    {
+      "label": "dailyKwh",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L37",
+      "id": "locales_ar_metrics_dailykwh",
+      "community": 8,
+      "norm_label": "dailykwh"
+    },
+    {
+      "label": "litersPerDay",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L38",
+      "id": "locales_ar_metrics_litersperday",
+      "community": 8,
+      "norm_label": "litersperday"
+    },
+    {
+      "label": "sizeNeeded",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L39",
+      "id": "locales_ar_metrics_sizeneeded",
+      "community": 8,
+      "norm_label": "sizeneeded"
+    },
+    {
+      "label": "panelsCount",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L40",
+      "id": "locales_ar_metrics_panelscount",
+      "community": 8,
+      "norm_label": "panelscount"
+    },
+    {
+      "label": "totalCapacity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L41",
+      "id": "locales_ar_metrics_totalcapacity",
+      "community": 8,
+      "norm_label": "totalcapacity"
+    },
+    {
+      "label": "batterySize",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L42",
+      "id": "locales_ar_metrics_batterysize",
+      "community": 8,
+      "norm_label": "batterysize"
+    },
+    {
+      "label": "coverage",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L43",
+      "id": "locales_ar_metrics_coverage",
+      "community": 8,
+      "norm_label": "coverage"
+    },
+    {
+      "label": "installCost",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L44",
+      "id": "locales_ar_metrics_installcost",
+      "community": 8,
+      "norm_label": "installcost"
+    },
+    {
+      "label": "monthlyEquiv",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L45",
+      "id": "locales_ar_metrics_monthlyequiv",
+      "community": 8,
+      "norm_label": "monthlyequiv"
+    },
+    {
+      "label": "payback",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L46",
+      "id": "locales_ar_metrics_payback",
+      "community": 8,
+      "norm_label": "payback"
+    },
+    {
+      "label": "paybackNote",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L47",
+      "id": "locales_ar_metrics_paybacknote",
+      "community": 8,
+      "norm_label": "paybacknote"
+    },
+    {
+      "label": "enterBudget",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L48",
+      "id": "locales_ar_metrics_enterbudget",
+      "community": 8,
+      "norm_label": "enterbudget"
+    },
+    {
+      "label": "enterPanels",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L49",
+      "id": "locales_ar_metrics_enterpanels",
+      "community": 8,
+      "norm_label": "enterpanels"
+    },
+    {
+      "label": "bestValue",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L51",
+      "id": "locales_ar_bestvalue",
+      "community": 7,
+      "norm_label": "bestvalue"
+    },
+    {
+      "label": "chart",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L52",
+      "id": "locales_ar_chart",
+      "community": 1,
+      "norm_label": "chart"
+    },
+    {
+      "label": "title",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L53",
+      "id": "locales_ar_chart_title",
+      "community": 1,
+      "norm_label": "title"
+    },
+    {
+      "label": "note",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L54",
+      "id": "locales_ar_chart_note",
+      "community": 1,
+      "norm_label": "note"
+    },
+    {
+      "label": "costLabel",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L55",
+      "id": "locales_ar_chart_costlabel",
+      "community": 1,
+      "norm_label": "costlabel"
+    },
+    {
+      "label": "recommendation",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L57",
+      "id": "locales_ar_recommendation",
+      "community": 7,
+      "norm_label": "recommendation"
+    },
+    {
+      "label": "solarPartial",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L59",
+      "id": "locales_ar_recommendation_solarpartial",
+      "community": 7,
+      "norm_label": "solarpartial"
+    },
+    {
+      "label": "en.json",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L1",
+      "id": "locales_en",
+      "community": 12,
+      "norm_label": "en.json"
+    },
+    {
+      "label": "appName",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L2",
+      "id": "locales_en_appname",
+      "community": 12,
+      "norm_label": "appname"
+    },
+    {
+      "label": "tagline",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L3",
+      "id": "locales_en_tagline",
+      "community": 12,
+      "norm_label": "tagline"
+    },
+    {
+      "label": "inputPanel",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L4",
+      "id": "locales_en_inputpanel",
+      "community": 2,
+      "norm_label": "inputpanel"
+    },
+    {
+      "label": "devicePower",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L6",
+      "id": "locales_en_inputpanel_devicepower",
+      "community": 2,
+      "norm_label": "devicepower"
+    },
+    {
+      "label": "phaseType",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L7",
+      "id": "locales_en_inputpanel_phasetype",
+      "community": 2,
+      "norm_label": "phasetype"
+    },
+    {
+      "label": "singlePhase",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L8",
+      "id": "locales_en_inputpanel_singlephase",
+      "community": 2,
+      "norm_label": "singlephase"
+    },
+    {
+      "label": "threePhase",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L9",
+      "id": "locales_en_inputpanel_threephase",
+      "community": 2,
+      "norm_label": "threephase"
+    },
+    {
+      "label": "dailyHours",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L10",
+      "id": "locales_en_inputpanel_dailyhours",
+      "community": 2,
+      "norm_label": "dailyhours"
+    },
+    {
+      "label": "pricing",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L11",
+      "id": "locales_en_inputpanel_pricing",
+      "community": 2,
+      "norm_label": "pricing"
+    },
+    {
+      "label": "electricityPrice",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L12",
+      "id": "locales_en_inputpanel_electricityprice",
+      "community": 2,
+      "norm_label": "electricityprice"
+    },
+    {
+      "label": "dieselPrice",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L13",
+      "id": "locales_en_inputpanel_dieselprice",
+      "community": 2,
+      "norm_label": "dieselprice"
+    },
+    {
+      "label": "solarBudget",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L14",
+      "id": "locales_en_inputpanel_solarbudget",
+      "community": 2,
+      "norm_label": "solarbudget"
+    },
+    {
+      "label": "solarPanelCount",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L15",
+      "id": "locales_en_inputpanel_solarpanelcount",
+      "community": 2,
+      "norm_label": "solarpanelcount"
+    },
+    {
+      "label": "solarPanelWatts",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L16",
+      "id": "locales_en_inputpanel_solarpanelwatts",
+      "community": 2,
+      "norm_label": "solarpanelwatts"
+    },
+    {
+      "label": "calculatedCapacity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L17",
+      "id": "locales_en_inputpanel_calculatedcapacity",
+      "community": 2,
+      "norm_label": "calculatedcapacity"
+    },
+    {
+      "label": "calculatedPanels",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L18",
+      "id": "locales_en_inputpanel_calculatedpanels",
+      "community": 2,
+      "norm_label": "calculatedpanels"
+    },
+    {
+      "label": "solarCapacity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L19",
+      "id": "locales_en_inputpanel_solarcapacity",
+      "community": 2,
+      "norm_label": "solarcapacity"
+    },
+    {
+      "label": "placeholderCapacity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L20",
+      "id": "locales_en_inputpanel_placeholdercapacity",
+      "community": 2,
+      "norm_label": "placeholdercapacity"
+    },
+    {
+      "label": "placeholderWatts",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L21",
+      "id": "locales_en_inputpanel_placeholderwatts",
+      "community": 2,
+      "norm_label": "placeholderwatts"
+    },
+    {
+      "label": "placeholderHours",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L22",
+      "id": "locales_en_inputpanel_placeholderhours",
+      "community": 2,
+      "norm_label": "placeholderhours"
+    },
+    {
+      "label": "placeholderElectricity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L23",
+      "id": "locales_en_inputpanel_placeholderelectricity",
+      "community": 2,
+      "norm_label": "placeholderelectricity"
+    },
+    {
+      "label": "placeholderDiesel",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L24",
+      "id": "locales_en_inputpanel_placeholderdiesel",
+      "community": 2,
+      "norm_label": "placeholderdiesel"
+    },
+    {
+      "label": "placeholderSolar",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L25",
+      "id": "locales_en_inputpanel_placeholdersolar",
+      "community": 2,
+      "norm_label": "placeholdersolar"
+    },
+    {
+      "label": "placeholderPanelCount",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L26",
+      "id": "locales_en_inputpanel_placeholderpanelcount",
+      "community": 2,
+      "norm_label": "placeholderpanelcount"
+    },
+    {
+      "label": "placeholderPanelWatts",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L27",
+      "id": "locales_en_inputpanel_placeholderpanelwatts",
+      "community": 2,
+      "norm_label": "placeholderpanelwatts"
+    },
+    {
+      "label": "sources",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L29",
+      "id": "locales_en_sources",
+      "community": 12,
+      "norm_label": "sources"
+    },
+    {
+      "label": "electricity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L30",
+      "id": "locales_en_sources_electricity",
+      "community": 12,
+      "norm_label": "electricity"
+    },
+    {
+      "label": "generator",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L31",
+      "id": "locales_en_sources_generator",
+      "community": 12,
+      "norm_label": "generator"
+    },
+    {
+      "label": "solar",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L32",
+      "id": "locales_en_sources_solar",
+      "community": 12,
+      "norm_label": "solar"
+    },
+    {
+      "label": "metrics",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L34",
+      "id": "locales_en_metrics",
+      "community": 9,
+      "norm_label": "metrics"
+    },
+    {
+      "label": "perMonth",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L35",
+      "id": "locales_en_metrics_permonth",
+      "community": 9,
+      "norm_label": "permonth"
+    },
+    {
+      "label": "annualCost",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L36",
+      "id": "locales_en_metrics_annualcost",
+      "community": 9,
+      "norm_label": "annualcost"
+    },
+    {
+      "label": "dailyKwh",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L37",
+      "id": "locales_en_metrics_dailykwh",
+      "community": 9,
+      "norm_label": "dailykwh"
+    },
+    {
+      "label": "litersPerDay",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L38",
+      "id": "locales_en_metrics_litersperday",
+      "community": 9,
+      "norm_label": "litersperday"
+    },
+    {
+      "label": "sizeNeeded",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L39",
+      "id": "locales_en_metrics_sizeneeded",
+      "community": 9,
+      "norm_label": "sizeneeded"
+    },
+    {
+      "label": "panelsCount",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L40",
+      "id": "locales_en_metrics_panelscount",
+      "community": 9,
+      "norm_label": "panelscount"
+    },
+    {
+      "label": "totalCapacity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L41",
+      "id": "locales_en_metrics_totalcapacity",
+      "community": 9,
+      "norm_label": "totalcapacity"
+    },
+    {
+      "label": "batterySize",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L42",
+      "id": "locales_en_metrics_batterysize",
+      "community": 9,
+      "norm_label": "batterysize"
+    },
+    {
+      "label": "coverage",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L43",
+      "id": "locales_en_metrics_coverage",
+      "community": 9,
+      "norm_label": "coverage"
+    },
+    {
+      "label": "installCost",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L44",
+      "id": "locales_en_metrics_installcost",
+      "community": 9,
+      "norm_label": "installcost"
+    },
+    {
+      "label": "monthlyEquiv",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L45",
+      "id": "locales_en_metrics_monthlyequiv",
+      "community": 9,
+      "norm_label": "monthlyequiv"
+    },
+    {
+      "label": "payback",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L46",
+      "id": "locales_en_metrics_payback",
+      "community": 9,
+      "norm_label": "payback"
+    },
+    {
+      "label": "paybackNote",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L47",
+      "id": "locales_en_metrics_paybacknote",
+      "community": 9,
+      "norm_label": "paybacknote"
+    },
+    {
+      "label": "enterBudget",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L48",
+      "id": "locales_en_metrics_enterbudget",
+      "community": 9,
+      "norm_label": "enterbudget"
+    },
+    {
+      "label": "enterPanels",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L49",
+      "id": "locales_en_metrics_enterpanels",
+      "community": 9,
+      "norm_label": "enterpanels"
+    },
+    {
+      "label": "bestValue",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L51",
+      "id": "locales_en_bestvalue",
+      "community": 12,
+      "norm_label": "bestvalue"
+    },
+    {
+      "label": "chart",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L52",
+      "id": "locales_en_chart",
+      "community": 12,
+      "norm_label": "chart"
+    },
+    {
+      "label": "title",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L53",
+      "id": "locales_en_chart_title",
+      "community": 12,
+      "norm_label": "title"
+    },
+    {
+      "label": "note",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L54",
+      "id": "locales_en_chart_note",
+      "community": 12,
+      "norm_label": "note"
+    },
+    {
+      "label": "costLabel",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L55",
+      "id": "locales_en_chart_costlabel",
+      "community": 12,
+      "norm_label": "costlabel"
+    },
+    {
+      "label": "recommendation",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L57",
+      "id": "locales_en_recommendation",
+      "community": 12,
+      "norm_label": "recommendation"
+    },
+    {
+      "label": "solarPartial",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L59",
+      "id": "locales_en_recommendation_solarpartial",
+      "community": 12,
+      "norm_label": "solarpartial"
+    },
+    {
+      "label": "fr.json",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L1",
+      "id": "locales_fr",
+      "community": 13,
+      "norm_label": "fr.json"
+    },
+    {
+      "label": "appName",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L2",
+      "id": "locales_fr_appname",
+      "community": 13,
+      "norm_label": "appname"
+    },
+    {
+      "label": "tagline",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L3",
+      "id": "locales_fr_tagline",
+      "community": 13,
+      "norm_label": "tagline"
+    },
+    {
+      "label": "inputPanel",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L4",
+      "id": "locales_fr_inputpanel",
+      "community": 3,
+      "norm_label": "inputpanel"
+    },
+    {
+      "label": "devicePower",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L6",
+      "id": "locales_fr_inputpanel_devicepower",
+      "community": 3,
+      "norm_label": "devicepower"
+    },
+    {
+      "label": "phaseType",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L7",
+      "id": "locales_fr_inputpanel_phasetype",
+      "community": 3,
+      "norm_label": "phasetype"
+    },
+    {
+      "label": "singlePhase",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L8",
+      "id": "locales_fr_inputpanel_singlephase",
+      "community": 3,
+      "norm_label": "singlephase"
+    },
+    {
+      "label": "threePhase",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L9",
+      "id": "locales_fr_inputpanel_threephase",
+      "community": 3,
+      "norm_label": "threephase"
+    },
+    {
+      "label": "dailyHours",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L10",
+      "id": "locales_fr_inputpanel_dailyhours",
+      "community": 3,
+      "norm_label": "dailyhours"
+    },
+    {
+      "label": "pricing",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L11",
+      "id": "locales_fr_inputpanel_pricing",
+      "community": 3,
+      "norm_label": "pricing"
+    },
+    {
+      "label": "electricityPrice",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L12",
+      "id": "locales_fr_inputpanel_electricityprice",
+      "community": 3,
+      "norm_label": "electricityprice"
+    },
+    {
+      "label": "dieselPrice",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L13",
+      "id": "locales_fr_inputpanel_dieselprice",
+      "community": 3,
+      "norm_label": "dieselprice"
+    },
+    {
+      "label": "solarBudget",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L14",
+      "id": "locales_fr_inputpanel_solarbudget",
+      "community": 3,
+      "norm_label": "solarbudget"
+    },
+    {
+      "label": "solarPanelCount",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L15",
+      "id": "locales_fr_inputpanel_solarpanelcount",
+      "community": 3,
+      "norm_label": "solarpanelcount"
+    },
+    {
+      "label": "solarPanelWatts",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L16",
+      "id": "locales_fr_inputpanel_solarpanelwatts",
+      "community": 3,
+      "norm_label": "solarpanelwatts"
+    },
+    {
+      "label": "calculatedCapacity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L17",
+      "id": "locales_fr_inputpanel_calculatedcapacity",
+      "community": 3,
+      "norm_label": "calculatedcapacity"
+    },
+    {
+      "label": "calculatedPanels",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L18",
+      "id": "locales_fr_inputpanel_calculatedpanels",
+      "community": 3,
+      "norm_label": "calculatedpanels"
+    },
+    {
+      "label": "solarCapacity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L19",
+      "id": "locales_fr_inputpanel_solarcapacity",
+      "community": 3,
+      "norm_label": "solarcapacity"
+    },
+    {
+      "label": "placeholderCapacity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L20",
+      "id": "locales_fr_inputpanel_placeholdercapacity",
+      "community": 3,
+      "norm_label": "placeholdercapacity"
+    },
+    {
+      "label": "placeholderWatts",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L21",
+      "id": "locales_fr_inputpanel_placeholderwatts",
+      "community": 3,
+      "norm_label": "placeholderwatts"
+    },
+    {
+      "label": "placeholderHours",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L22",
+      "id": "locales_fr_inputpanel_placeholderhours",
+      "community": 3,
+      "norm_label": "placeholderhours"
+    },
+    {
+      "label": "placeholderElectricity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L23",
+      "id": "locales_fr_inputpanel_placeholderelectricity",
+      "community": 3,
+      "norm_label": "placeholderelectricity"
+    },
+    {
+      "label": "placeholderDiesel",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L24",
+      "id": "locales_fr_inputpanel_placeholderdiesel",
+      "community": 3,
+      "norm_label": "placeholderdiesel"
+    },
+    {
+      "label": "placeholderSolar",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L25",
+      "id": "locales_fr_inputpanel_placeholdersolar",
+      "community": 3,
+      "norm_label": "placeholdersolar"
+    },
+    {
+      "label": "placeholderPanelCount",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L26",
+      "id": "locales_fr_inputpanel_placeholderpanelcount",
+      "community": 3,
+      "norm_label": "placeholderpanelcount"
+    },
+    {
+      "label": "placeholderPanelWatts",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L27",
+      "id": "locales_fr_inputpanel_placeholderpanelwatts",
+      "community": 3,
+      "norm_label": "placeholderpanelwatts"
+    },
+    {
+      "label": "sources",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L29",
+      "id": "locales_fr_sources",
+      "community": 13,
+      "norm_label": "sources"
+    },
+    {
+      "label": "electricity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L30",
+      "id": "locales_fr_sources_electricity",
+      "community": 13,
+      "norm_label": "electricity"
+    },
+    {
+      "label": "generator",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L31",
+      "id": "locales_fr_sources_generator",
+      "community": 13,
+      "norm_label": "generator"
+    },
+    {
+      "label": "solar",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L32",
+      "id": "locales_fr_sources_solar",
+      "community": 13,
+      "norm_label": "solar"
+    },
+    {
+      "label": "metrics",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L34",
+      "id": "locales_fr_metrics",
+      "community": 10,
+      "norm_label": "metrics"
+    },
+    {
+      "label": "perMonth",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L35",
+      "id": "locales_fr_metrics_permonth",
+      "community": 10,
+      "norm_label": "permonth"
+    },
+    {
+      "label": "annualCost",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L36",
+      "id": "locales_fr_metrics_annualcost",
+      "community": 10,
+      "norm_label": "annualcost"
+    },
+    {
+      "label": "dailyKwh",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L37",
+      "id": "locales_fr_metrics_dailykwh",
+      "community": 10,
+      "norm_label": "dailykwh"
+    },
+    {
+      "label": "litersPerDay",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L38",
+      "id": "locales_fr_metrics_litersperday",
+      "community": 10,
+      "norm_label": "litersperday"
+    },
+    {
+      "label": "sizeNeeded",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L39",
+      "id": "locales_fr_metrics_sizeneeded",
+      "community": 10,
+      "norm_label": "sizeneeded"
+    },
+    {
+      "label": "panelsCount",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L40",
+      "id": "locales_fr_metrics_panelscount",
+      "community": 10,
+      "norm_label": "panelscount"
+    },
+    {
+      "label": "totalCapacity",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L41",
+      "id": "locales_fr_metrics_totalcapacity",
+      "community": 10,
+      "norm_label": "totalcapacity"
+    },
+    {
+      "label": "batterySize",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L42",
+      "id": "locales_fr_metrics_batterysize",
+      "community": 10,
+      "norm_label": "batterysize"
+    },
+    {
+      "label": "coverage",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L43",
+      "id": "locales_fr_metrics_coverage",
+      "community": 10,
+      "norm_label": "coverage"
+    },
+    {
+      "label": "installCost",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L44",
+      "id": "locales_fr_metrics_installcost",
+      "community": 10,
+      "norm_label": "installcost"
+    },
+    {
+      "label": "monthlyEquiv",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L45",
+      "id": "locales_fr_metrics_monthlyequiv",
+      "community": 10,
+      "norm_label": "monthlyequiv"
+    },
+    {
+      "label": "payback",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L46",
+      "id": "locales_fr_metrics_payback",
+      "community": 10,
+      "norm_label": "payback"
+    },
+    {
+      "label": "paybackNote",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L47",
+      "id": "locales_fr_metrics_paybacknote",
+      "community": 10,
+      "norm_label": "paybacknote"
+    },
+    {
+      "label": "enterBudget",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L48",
+      "id": "locales_fr_metrics_enterbudget",
+      "community": 10,
+      "norm_label": "enterbudget"
+    },
+    {
+      "label": "enterPanels",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L49",
+      "id": "locales_fr_metrics_enterpanels",
+      "community": 10,
+      "norm_label": "enterpanels"
+    },
+    {
+      "label": "bestValue",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L51",
+      "id": "locales_fr_bestvalue",
+      "community": 13,
+      "norm_label": "bestvalue"
+    },
+    {
+      "label": "chart",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L52",
+      "id": "locales_fr_chart",
+      "community": 13,
+      "norm_label": "chart"
+    },
+    {
+      "label": "title",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L53",
+      "id": "locales_fr_chart_title",
+      "community": 13,
+      "norm_label": "title"
+    },
+    {
+      "label": "note",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L54",
+      "id": "locales_fr_chart_note",
+      "community": 13,
+      "norm_label": "note"
+    },
+    {
+      "label": "costLabel",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L55",
+      "id": "locales_fr_chart_costlabel",
+      "community": 13,
+      "norm_label": "costlabel"
+    },
+    {
+      "label": "recommendation",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L57",
+      "id": "locales_fr_recommendation",
+      "community": 13,
+      "norm_label": "recommendation"
+    },
+    {
+      "label": "solarPartial",
+      "file_type": "code",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L59",
+      "id": "locales_fr_recommendation_solarpartial",
+      "community": 13,
+      "norm_label": "solarpartial"
+    },
+    {
+      "label": "main.tsx",
+      "file_type": "code",
+      "source_file": "src/main.tsx",
+      "source_location": "L1",
+      "id": "src_main",
+      "community": 0,
+      "norm_label": "main.tsx"
+    },
+    {
+      "label": "Dashboard.tsx",
+      "file_type": "code",
+      "source_file": "src/pages/Dashboard.tsx",
+      "source_location": "L1",
+      "id": "pages_dashboard",
+      "community": 0,
+      "norm_label": "dashboard.tsx"
+    },
+    {
+      "label": "DEFAULT_INPUTS",
+      "file_type": "code",
+      "source_file": "src/pages/Dashboard.tsx",
+      "source_location": "L8",
+      "id": "pages_dashboard_default_inputs",
+      "community": 0,
+      "norm_label": "default_inputs"
+    },
+    {
+      "label": "Dashboard()",
+      "file_type": "code",
+      "source_file": "src/pages/Dashboard.tsx",
+      "source_location": "L20",
+      "id": "pages_dashboard_dashboard",
+      "community": 0,
+      "norm_label": "dashboard()"
+    },
+    {
+      "label": "BASE",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.test.ts",
+      "source_location": "L10",
+      "id": "utils_energycalculations_test_base",
+      "community": 0,
+      "norm_label": "base"
+    },
+    {
+      "label": "energyCalculations.ts",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L1",
+      "id": "utils_energycalculations",
+      "community": 0,
+      "norm_label": "energycalculations.ts"
+    },
+    {
+      "label": "EnergyInputs",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L3",
+      "id": "utils_energycalculations_energyinputs",
+      "community": 0,
+      "norm_label": "energyinputs"
+    },
+    {
+      "label": "ElectricityResult",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L15",
+      "id": "utils_energycalculations_electricityresult",
+      "community": 0,
+      "norm_label": "electricityresult"
+    },
+    {
+      "label": "GeneratorResult",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L21",
+      "id": "utils_energycalculations_generatorresult",
+      "community": 0,
+      "norm_label": "generatorresult"
+    },
+    {
+      "label": "SolarResult",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L29",
+      "id": "utils_energycalculations_solarresult",
+      "community": 0,
+      "norm_label": "solarresult"
+    },
+    {
+      "label": "RecommendationResult",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L41",
+      "id": "utils_energycalculations_recommendationresult",
+      "community": 7,
+      "norm_label": "recommendationresult"
+    },
+    {
+      "label": "AllResults",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L52",
+      "id": "utils_energycalculations_allresults",
+      "community": 0,
+      "norm_label": "allresults"
+    },
+    {
+      "label": "calculateElectricity()",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L61",
+      "id": "utils_energycalculations_calculateelectricity",
+      "community": 0,
+      "norm_label": "calculateelectricity()"
+    },
+    {
+      "label": "STANDARD_KVA",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L74",
+      "id": "utils_energycalculations_standard_kva",
+      "community": 0,
+      "norm_label": "standard_kva"
+    },
+    {
+      "label": "STARTING_FACTOR",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L78",
+      "id": "utils_energycalculations_starting_factor",
+      "community": 0,
+      "norm_label": "starting_factor"
+    },
+    {
+      "label": "calculateGenerator()",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L80",
+      "id": "utils_energycalculations_calculategenerator",
+      "community": 0,
+      "norm_label": "calculategenerator()"
+    },
+    {
+      "label": "calculateSolar()",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L105",
+      "id": "utils_energycalculations_calculatesolar",
+      "community": 0,
+      "norm_label": "calculatesolar()"
+    },
+    {
+      "label": "calculateRecommendation()",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L145",
+      "id": "utils_energycalculations_calculaterecommendation",
+      "community": 0,
+      "norm_label": "calculaterecommendation()"
+    },
+    {
+      "label": "calculateAll()",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L193",
+      "id": "utils_energycalculations_calculateall",
+      "community": 0,
+      "norm_label": "calculateall()"
+    },
+    {
+      "label": "format.ts",
+      "file_type": "code",
+      "source_file": "src/utils/format.ts",
+      "source_location": "L1",
+      "id": "utils_format",
+      "community": 7,
+      "norm_label": "format.ts"
+    },
+    {
+      "label": "fmtXAF()",
+      "file_type": "code",
+      "source_file": "src/utils/format.ts",
+      "source_location": "L1",
+      "id": "utils_format_fmtxaf",
+      "community": 7,
+      "norm_label": "fmtxaf()"
+    },
+    {
+      "label": "tsconfig.app.json",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L1",
+      "id": "tsconfig_app",
+      "community": 5,
+      "norm_label": "tsconfig.app.json"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L2",
+      "id": "tsconfig_app_compileroptions",
+      "community": 5,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "tsBuildInfoFile",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L3",
+      "id": "tsconfig_app_compileroptions_tsbuildinfofile",
+      "community": 5,
+      "norm_label": "tsbuildinfofile"
+    },
+    {
+      "label": "target",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L4",
+      "id": "tsconfig_app_compileroptions_target",
+      "community": 5,
+      "norm_label": "target"
+    },
+    {
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L5",
+      "id": "tsconfig_app_compileroptions_lib",
+      "community": 5,
+      "norm_label": "lib"
+    },
+    {
+      "label": "module",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L6",
+      "id": "tsconfig_app_compileroptions_module",
+      "community": 5,
+      "norm_label": "module"
+    },
+    {
+      "label": "types",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L7",
+      "id": "tsconfig_app_compileroptions_types",
+      "community": 5,
+      "norm_label": "types"
+    },
+    {
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L8",
+      "id": "tsconfig_app_compileroptions_skiplibcheck",
+      "community": 5,
+      "norm_label": "skiplibcheck"
+    },
+    {
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L11",
+      "id": "tsconfig_app_compileroptions_moduleresolution",
+      "community": 5,
+      "norm_label": "moduleresolution"
+    },
+    {
+      "label": "allowImportingTsExtensions",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L12",
+      "id": "tsconfig_app_compileroptions_allowimportingtsextensions",
+      "community": 5,
+      "norm_label": "allowimportingtsextensions"
+    },
+    {
+      "label": "verbatimModuleSyntax",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L13",
+      "id": "tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "community": 5,
+      "norm_label": "verbatimmodulesyntax"
+    },
+    {
+      "label": "moduleDetection",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L14",
+      "id": "tsconfig_app_compileroptions_moduledetection",
+      "community": 5,
+      "norm_label": "moduledetection"
+    },
+    {
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L15",
+      "id": "tsconfig_app_compileroptions_noemit",
+      "community": 5,
+      "norm_label": "noemit"
+    },
+    {
+      "label": "jsx",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L16",
+      "id": "tsconfig_app_compileroptions_jsx",
+      "community": 5,
+      "norm_label": "jsx"
+    },
+    {
+      "label": "noUnusedLocals",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L19",
+      "id": "tsconfig_app_compileroptions_nounusedlocals",
+      "community": 5,
+      "norm_label": "nounusedlocals"
+    },
+    {
+      "label": "noUnusedParameters",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L20",
+      "id": "tsconfig_app_compileroptions_nounusedparameters",
+      "community": 5,
+      "norm_label": "nounusedparameters"
+    },
+    {
+      "label": "erasableSyntaxOnly",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L21",
+      "id": "tsconfig_app_compileroptions_erasablesyntaxonly",
+      "community": 5,
+      "norm_label": "erasablesyntaxonly"
+    },
+    {
+      "label": "noFallthroughCasesInSwitch",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L22",
+      "id": "tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "community": 5,
+      "norm_label": "nofallthroughcasesinswitch"
+    },
+    {
+      "label": "include",
+      "file_type": "code",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L24",
+      "id": "tsconfig_app_include",
+      "community": 5,
+      "norm_label": "include"
+    },
+    {
+      "label": "tsconfig.json",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L1",
+      "id": "tsconfig",
+      "community": 17,
+      "norm_label": "tsconfig.json"
+    },
+    {
+      "label": "files",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "id": "tsconfig_files",
+      "community": 17,
+      "norm_label": "files"
+    },
+    {
+      "label": "references",
+      "file_type": "code",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "id": "tsconfig_references",
+      "community": 17,
+      "norm_label": "references"
+    },
+    {
+      "label": "tsconfig.node.json",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L1",
+      "id": "tsconfig_node",
+      "community": 6,
+      "norm_label": "tsconfig.node.json"
+    },
+    {
+      "label": "compilerOptions",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L2",
+      "id": "tsconfig_node_compileroptions",
+      "community": 6,
+      "norm_label": "compileroptions"
+    },
+    {
+      "label": "tsBuildInfoFile",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L3",
+      "id": "tsconfig_node_compileroptions_tsbuildinfofile",
+      "community": 6,
+      "norm_label": "tsbuildinfofile"
+    },
+    {
+      "label": "target",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L4",
+      "id": "tsconfig_node_compileroptions_target",
+      "community": 6,
+      "norm_label": "target"
+    },
+    {
+      "label": "lib",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L5",
+      "id": "tsconfig_node_compileroptions_lib",
+      "community": 6,
+      "norm_label": "lib"
+    },
+    {
+      "label": "module",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L6",
+      "id": "tsconfig_node_compileroptions_module",
+      "community": 6,
+      "norm_label": "module"
+    },
+    {
+      "label": "types",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L7",
+      "id": "tsconfig_node_compileroptions_types",
+      "community": 6,
+      "norm_label": "types"
+    },
+    {
+      "label": "skipLibCheck",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L8",
+      "id": "tsconfig_node_compileroptions_skiplibcheck",
+      "community": 6,
+      "norm_label": "skiplibcheck"
+    },
+    {
+      "label": "moduleResolution",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L11",
+      "id": "tsconfig_node_compileroptions_moduleresolution",
+      "community": 6,
+      "norm_label": "moduleresolution"
+    },
+    {
+      "label": "allowImportingTsExtensions",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L12",
+      "id": "tsconfig_node_compileroptions_allowimportingtsextensions",
+      "community": 6,
+      "norm_label": "allowimportingtsextensions"
+    },
+    {
+      "label": "verbatimModuleSyntax",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L13",
+      "id": "tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "community": 6,
+      "norm_label": "verbatimmodulesyntax"
+    },
+    {
+      "label": "moduleDetection",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L14",
+      "id": "tsconfig_node_compileroptions_moduledetection",
+      "community": 6,
+      "norm_label": "moduledetection"
+    },
+    {
+      "label": "noEmit",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L15",
+      "id": "tsconfig_node_compileroptions_noemit",
+      "community": 6,
+      "norm_label": "noemit"
+    },
+    {
+      "label": "noUnusedLocals",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L18",
+      "id": "tsconfig_node_compileroptions_nounusedlocals",
+      "community": 6,
+      "norm_label": "nounusedlocals"
+    },
+    {
+      "label": "noUnusedParameters",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L19",
+      "id": "tsconfig_node_compileroptions_nounusedparameters",
+      "community": 6,
+      "norm_label": "nounusedparameters"
+    },
+    {
+      "label": "erasableSyntaxOnly",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L20",
+      "id": "tsconfig_node_compileroptions_erasablesyntaxonly",
+      "community": 6,
+      "norm_label": "erasablesyntaxonly"
+    },
+    {
+      "label": "noFallthroughCasesInSwitch",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L21",
+      "id": "tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "community": 6,
+      "norm_label": "nofallthroughcasesinswitch"
+    },
+    {
+      "label": "include",
+      "file_type": "code",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L23",
+      "id": "tsconfig_node_include",
+      "community": 6,
+      "norm_label": "include"
+    },
+    {
+      "label": "vite.config.ts",
+      "file_type": "code",
+      "source_file": "vite.config.ts",
+      "source_location": "L1",
+      "id": "vite_config",
+      "community": 20,
+      "norm_label": "vite.config.ts"
+    },
+    {
+      "label": "Energy Advisor Implementation Plan",
+      "file_type": "document",
+      "source_file": "docs/superpowers/plans/2026-05-24-energy-advisor.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "energy_advisor_implementation_plan",
+      "community": 15,
+      "norm_label": "energy advisor implementation plan"
+    },
+    {
+      "label": "Energy Advisor \u2014 Design Spec",
+      "file_type": "document",
+      "source_file": "docs/superpowers/specs/2026-05-24-energy-advisor-design.md",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "energy_advisor_design_spec",
+      "community": 15,
+      "norm_label": "energy advisor \u2014 design spec"
+    },
+    {
+      "label": "Energy Calculations Engine",
+      "file_type": "code",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "energycalculations_ts",
+      "community": 14,
+      "norm_label": "energy calculations engine"
+    },
+    {
+      "label": "Dashboard Page",
+      "file_type": "code",
+      "source_file": "src/pages/Dashboard.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "dashboard_tsx",
+      "community": 14,
+      "norm_label": "dashboard page"
+    },
+    {
+      "label": "Input Panel Component",
+      "file_type": "code",
+      "source_file": "src/components/InputPanel.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "inputpanel_tsx",
+      "community": 14,
+      "norm_label": "input panel component"
+    },
+    {
+      "label": "Energy Source Card Component",
+      "file_type": "code",
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "energysourcecard_tsx",
+      "community": 14,
+      "norm_label": "energy source card component"
+    },
+    {
+      "label": "Comparison Chart Component",
+      "file_type": "code",
+      "source_file": "src/components/ComparisonChart.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "comparisonchart_tsx",
+      "community": 14,
+      "norm_label": "comparison chart component"
+    },
+    {
+      "label": "Recommendation Banner Component",
+      "file_type": "code",
+      "source_file": "src/components/RecommendationBanner.tsx",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "recommendationbanner_tsx",
+      "community": 14,
+      "norm_label": "recommendation banner component"
+    },
+    {
+      "label": "Brand CSS Tokens",
+      "file_type": "code",
+      "source_file": "src/styles/brand.css",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "brand_css",
+      "community": 18,
+      "norm_label": "brand css tokens"
+    },
+    {
+      "label": "App Layout Styles",
+      "file_type": "code",
+      "source_file": "src/styles/app.css",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "app_css",
+      "community": 18,
+      "norm_label": "app layout styles"
+    },
+    {
+      "label": "App Structure Brainstorm",
+      "file_type": "rationale",
+      "source_file": ".superpowers/brainstorm/1337-1779647661/content/app-structure.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "app_structure_brainstorm",
+      "community": 15,
+      "norm_label": "app structure brainstorm"
+    },
+    {
+      "label": "Dashboard Layout Mockup",
+      "file_type": "rationale",
+      "source_file": ".superpowers/brainstorm/1337-1779647661/content/dashboard-layout.html",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "dashboard_layout_mockup",
+      "community": 15,
+      "norm_label": "dashboard layout mockup"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "claude_settings_local",
+      "target": "claude_settings_local_permissions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": ".claude/settings.local.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "claude_settings_local_permissions",
+      "target": "claude_settings_local_permissions_allow",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_dependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_devdependencies",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_name",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_private",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_scripts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_type",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "package",
+      "target": "package_version",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_build",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_dev",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_lint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_preview",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_test",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_test_ui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "package_scripts",
+      "target": "package_scripts_test_watch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_i18next",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_dom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_react_i18next",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "package_dependencies",
+      "target": "package_dependencies_recharts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_eslint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_eslint_js",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_eslint_plugin_react_hooks",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_eslint_plugin_react_refresh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_globals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L33",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_jsdom",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_node",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_types_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_typescript",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_typescript_eslint",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vite",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vitejs_plugin_react",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vitest",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "package.json",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "package_devdependencies",
+      "target": "package_devdependencies_vitest_ui",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "pages_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "pages_dashboard_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/App.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_app",
+      "target": "src_app_languages",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_main",
+      "target": "src_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "src_main",
+      "target": "src_app_app",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ComparisonChart.tsx",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "components_comparisonchart",
+      "target": "components_comparisonchart_chart_colors",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ComparisonChart.tsx",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "components_comparisonchart",
+      "target": "components_comparisonchart_props",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ComparisonChart.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "components_comparisonchart",
+      "target": "utils_energycalculations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ComparisonChart.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "components_comparisonchart",
+      "target": "utils_energycalculations_recommendationresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ComparisonChart.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_comparisonchart",
+      "target": "utils_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ComparisonChart.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_comparisonchart",
+      "target": "utils_format_fmtxaf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Dashboard.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "pages_dashboard",
+      "target": "components_comparisonchart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/ComparisonChart.tsx",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "components_comparisonchart_props",
+      "target": "utils_energycalculations_recommendationresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "components_energysourcecard",
+      "target": "components_energysourcecard_fmt",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "components_energysourcecard",
+      "target": "components_energysourcecard_props",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_energysourcecard",
+      "target": "utils_energycalculations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_energysourcecard",
+      "target": "utils_energycalculations_electricityresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_energysourcecard",
+      "target": "utils_energycalculations_generatorresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_energysourcecard",
+      "target": "utils_energycalculations_solarresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_energysourcecard",
+      "target": "utils_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "components_energysourcecard",
+      "target": "utils_format_fmtxaf"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Dashboard.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "pages_dashboard",
+      "target": "components_energysourcecard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "components_energysourcecard_props",
+      "target": "utils_energycalculations_electricityresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "components_energysourcecard_props",
+      "target": "utils_energycalculations_generatorresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/EnergySourceCard.tsx",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "components_energysourcecard_props",
+      "target": "utils_energycalculations_solarresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/InputPanel.tsx",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "components_inputpanel",
+      "target": "components_inputpanel_props",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/InputPanel.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_inputpanel",
+      "target": "utils_energycalculations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/InputPanel.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "components_inputpanel",
+      "target": "utils_energycalculations_energyinputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Dashboard.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "pages_dashboard",
+      "target": "components_inputpanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/InputPanel.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "components_inputpanel_props",
+      "target": "utils_energycalculations_energyinputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "context": "field",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/RecommendationBanner.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "components_recommendationbanner_props",
+      "target": "utils_energycalculations_recommendationresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/RecommendationBanner.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "locales_ar_recommendation",
+      "target": "components_recommendationbanner_props",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/index.ts",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "i18n_index",
+      "target": "locales_ar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/index.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "i18n_index",
+      "target": "locales_en",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/index.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "i18n_index",
+      "target": "locales_fr",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/main.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "src_main",
+      "target": "i18n_index",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "locales_ar",
+      "target": "locales_ar_appname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "locales_ar",
+      "target": "locales_ar_bestvalue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "locales_ar",
+      "target": "locales_ar_chart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "locales_ar",
+      "target": "locales_ar_inputpanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "locales_ar",
+      "target": "locales_ar_metrics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "locales_ar",
+      "target": "locales_ar_recommendation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "locales_ar",
+      "target": "locales_ar_sources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "locales_ar",
+      "target": "locales_ar_tagline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_chart_title",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_calculatedcapacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_calculatedpanels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_dailyhours",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_devicepower",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_dieselprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_phasetype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_placeholdercapacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_placeholderdiesel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_placeholderelectricity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_placeholderhours",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_placeholderpanelcount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_placeholdersolar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_placeholderwatts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_pricing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_singlephase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_solarbudget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_solarcapacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_solarpanelcount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_solarpanelwatts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_inputpanel_threephase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "locales_ar_inputpanel",
+      "target": "locales_ar_sources_electricity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "locales_ar_sources",
+      "target": "locales_ar_sources_electricity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "locales_ar_sources",
+      "target": "locales_ar_sources_generator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "locales_ar_sources",
+      "target": "locales_ar_sources_solar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "locales_ar_recommendation",
+      "target": "locales_ar_sources_electricity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "locales_ar_recommendation",
+      "target": "locales_ar_sources_generator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "locales_ar_recommendation",
+      "target": "locales_ar_sources_solar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_annualcost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_batterysize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_coverage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_dailykwh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_enterbudget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_enterpanels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_installcost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_litersperday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_monthlyequiv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_panelscount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_payback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_paybacknote",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_permonth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_sizeneeded",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "locales_ar_metrics",
+      "target": "locales_ar_metrics_totalcapacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "locales_ar_chart",
+      "target": "locales_ar_chart_costlabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "locales_ar_chart",
+      "target": "locales_ar_chart_note",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "locales_ar_chart",
+      "target": "locales_ar_chart_title",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/ar.json",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "locales_ar_recommendation",
+      "target": "locales_ar_recommendation_solarpartial",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/RecommendationBanner.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "locales_ar_recommendation",
+      "target": "utils_energycalculations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/RecommendationBanner.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "locales_ar_recommendation",
+      "target": "utils_energycalculations_recommendationresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/components/RecommendationBanner.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "locales_ar_recommendation",
+      "target": "utils_format",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/components/RecommendationBanner.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "locales_ar_recommendation",
+      "target": "utils_format_fmtxaf"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Dashboard.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "pages_dashboard",
+      "target": "locales_ar_recommendation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "locales_en",
+      "target": "locales_en_appname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "locales_en",
+      "target": "locales_en_bestvalue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "locales_en",
+      "target": "locales_en_chart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "locales_en",
+      "target": "locales_en_inputpanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "locales_en",
+      "target": "locales_en_metrics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "locales_en",
+      "target": "locales_en_recommendation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "locales_en",
+      "target": "locales_en_sources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "locales_en",
+      "target": "locales_en_tagline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_chart_title",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_calculatedcapacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_calculatedpanels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_dailyhours",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_devicepower",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_dieselprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_electricityprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_phasetype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_placeholdercapacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_placeholderdiesel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_placeholderelectricity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_placeholderhours",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_placeholderpanelcount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_placeholderpanelwatts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_placeholdersolar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_placeholderwatts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_pricing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_singlephase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_solarbudget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_solarcapacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_solarpanelcount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_solarpanelwatts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "locales_en_inputpanel",
+      "target": "locales_en_inputpanel_threephase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "locales_en_sources",
+      "target": "locales_en_sources_electricity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "locales_en_sources",
+      "target": "locales_en_sources_generator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "locales_en_sources",
+      "target": "locales_en_sources_solar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "locales_en_recommendation",
+      "target": "locales_en_sources_electricity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "locales_en_recommendation",
+      "target": "locales_en_sources_generator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "locales_en_recommendation",
+      "target": "locales_en_sources_solar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_annualcost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_batterysize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_coverage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_dailykwh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_enterbudget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_enterpanels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_installcost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_litersperday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_monthlyequiv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_panelscount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_payback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_paybacknote",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_permonth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_sizeneeded",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "locales_en_metrics",
+      "target": "locales_en_metrics_totalcapacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "locales_en_chart",
+      "target": "locales_en_chart_costlabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "locales_en_chart",
+      "target": "locales_en_chart_note",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "locales_en_chart",
+      "target": "locales_en_chart_title",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/en.json",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "locales_en_recommendation",
+      "target": "locales_en_recommendation_solarpartial",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "locales_fr",
+      "target": "locales_fr_appname",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L51",
+      "weight": 1.0,
+      "source": "locales_fr",
+      "target": "locales_fr_bestvalue",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "locales_fr",
+      "target": "locales_fr_chart",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "locales_fr",
+      "target": "locales_fr_inputpanel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L34",
+      "weight": 1.0,
+      "source": "locales_fr",
+      "target": "locales_fr_metrics",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L57",
+      "weight": 1.0,
+      "source": "locales_fr",
+      "target": "locales_fr_recommendation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "locales_fr",
+      "target": "locales_fr_sources",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "locales_fr",
+      "target": "locales_fr_tagline",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_chart_title",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L17",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_calculatedcapacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_calculatedpanels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_dailyhours",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_devicepower",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_dieselprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_electricityprice",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_phasetype",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_placeholdercapacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_placeholderdiesel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_placeholderelectricity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_placeholderhours",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_placeholderpanelcount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_placeholderpanelwatts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L25",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_placeholdersolar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_placeholderwatts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_pricing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_singlephase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_solarbudget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_solarcapacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_solarpanelcount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_solarpanelwatts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "locales_fr_inputpanel",
+      "target": "locales_fr_inputpanel_threephase",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L30",
+      "weight": 1.0,
+      "source": "locales_fr_sources",
+      "target": "locales_fr_sources_electricity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L31",
+      "weight": 1.0,
+      "source": "locales_fr_sources",
+      "target": "locales_fr_sources_generator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "locales_fr_sources",
+      "target": "locales_fr_sources_solar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L60",
+      "weight": 1.0,
+      "source": "locales_fr_recommendation",
+      "target": "locales_fr_sources_electricity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L61",
+      "weight": 1.0,
+      "source": "locales_fr_recommendation",
+      "target": "locales_fr_sources_generator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L58",
+      "weight": 1.0,
+      "source": "locales_fr_recommendation",
+      "target": "locales_fr_sources_solar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_annualcost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L42",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_batterysize",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L43",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_coverage",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L37",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_dailykwh",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L48",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_enterbudget",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L49",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_enterpanels",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L44",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_installcost",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L38",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_litersperday",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L45",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_monthlyequiv",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L40",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_panelscount",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L46",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_payback",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L47",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_paybacknote",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_permonth",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L39",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_sizeneeded",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "locales_fr_metrics",
+      "target": "locales_fr_metrics_totalcapacity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L55",
+      "weight": 1.0,
+      "source": "locales_fr_chart",
+      "target": "locales_fr_chart_costlabel",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L54",
+      "weight": 1.0,
+      "source": "locales_fr_chart",
+      "target": "locales_fr_chart_note",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L53",
+      "weight": 1.0,
+      "source": "locales_fr_chart",
+      "target": "locales_fr_chart_title",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/i18n/locales/fr.json",
+      "source_location": "L59",
+      "weight": 1.0,
+      "source": "locales_fr_recommendation",
+      "target": "locales_fr_recommendation_solarpartial",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Dashboard.tsx",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "pages_dashboard",
+      "target": "pages_dashboard_dashboard",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Dashboard.tsx",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "pages_dashboard",
+      "target": "pages_dashboard_default_inputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Dashboard.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "pages_dashboard",
+      "target": "utils_energycalculations",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Dashboard.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "pages_dashboard",
+      "target": "utils_energycalculations_calculateall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "src/pages/Dashboard.tsx",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "pages_dashboard",
+      "target": "utils_energycalculations_energyinputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/pages/Dashboard.tsx",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "pages_dashboard_dashboard",
+      "target": "utils_energycalculations_calculateall"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.test.ts",
+      "source_location": "L10",
+      "weight": 1.0,
+      "source": "utils_energycalculations",
+      "target": "utils_energycalculations_test_base",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "source": "utils_energycalculations",
+      "target": "utils_energycalculations_allresults",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "context": "import",
+      "source": "utils_energycalculations",
+      "target": "utils_energycalculations_calculateall",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "context": "import",
+      "source": "utils_energycalculations",
+      "target": "utils_energycalculations_calculateelectricity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "context": "import",
+      "source": "utils_energycalculations",
+      "target": "utils_energycalculations_calculategenerator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "context": "import",
+      "source": "utils_energycalculations",
+      "target": "utils_energycalculations_calculaterecommendation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.test.ts",
+      "source_location": "L2",
+      "weight": 1.0,
+      "context": "import",
+      "source": "utils_energycalculations",
+      "target": "utils_energycalculations_calculatesolar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "utils_energycalculations",
+      "target": "utils_energycalculations_electricityresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "utils_energycalculations",
+      "target": "utils_energycalculations_energyinputs",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "utils_energycalculations",
+      "target": "utils_energycalculations_generatorresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L41",
+      "weight": 1.0,
+      "source": "utils_energycalculations",
+      "target": "utils_energycalculations_recommendationresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L29",
+      "weight": 1.0,
+      "source": "utils_energycalculations",
+      "target": "utils_energycalculations_solarresult",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L74",
+      "weight": 1.0,
+      "source": "utils_energycalculations",
+      "target": "utils_energycalculations_standard_kva",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "utils_energycalculations",
+      "target": "utils_energycalculations_starting_factor",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L194",
+      "weight": 1.0,
+      "source": "utils_energycalculations_calculateall",
+      "target": "utils_energycalculations_calculateelectricity",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L195",
+      "weight": 1.0,
+      "source": "utils_energycalculations_calculateall",
+      "target": "utils_energycalculations_calculategenerator",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L196",
+      "weight": 1.0,
+      "source": "utils_energycalculations_calculateall",
+      "target": "utils_energycalculations_calculatesolar",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/energyCalculations.ts",
+      "source_location": "L197",
+      "weight": 1.0,
+      "source": "utils_energycalculations_calculateall",
+      "target": "utils_energycalculations_calculaterecommendation",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "src/utils/format.ts",
+      "source_location": "L1",
+      "weight": 1.0,
+      "source": "utils_format",
+      "target": "utils_format_fmtxaf",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tsconfig_app",
+      "target": "tsconfig_app_compileroptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "tsconfig_app",
+      "target": "tsconfig_app_include",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_allowimportingtsextensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_erasablesyntaxonly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L16",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_jsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_lib",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_module",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_moduledetection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_moduleresolution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_noemit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_nofallthroughcasesinswitch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_nounusedlocals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_nounusedparameters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_skiplibcheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_target",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_tsbuildinfofile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.app.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "tsconfig_app_compileroptions",
+      "target": "tsconfig_app_compileroptions_verbatimmodulesyntax",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tsconfig",
+      "target": "tsconfig_files",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tsconfig",
+      "target": "tsconfig_references",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L2",
+      "weight": 1.0,
+      "source": "tsconfig_node",
+      "target": "tsconfig_node_compileroptions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L23",
+      "weight": 1.0,
+      "source": "tsconfig_node",
+      "target": "tsconfig_node_include",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_allowimportingtsextensions",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L20",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_erasablesyntaxonly",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_lib",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_module",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_moduledetection",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_moduleresolution",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_noemit",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_nofallthroughcasesinswitch",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L18",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_nounusedlocals",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L19",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_nounusedparameters",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_skiplibcheck",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L4",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_target",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L3",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_tsbuildinfofile",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_types",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "tsconfig.node.json",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "tsconfig_node_compileroptions",
+      "target": "tsconfig_node_compileroptions_verbatimmodulesyntax",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/plans/2026-05-24-energy-advisor.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "energy_advisor_implementation_plan",
+      "target": "energy_advisor_design_spec"
+    },
+    {
+      "relation": "conceptually_related_to",
+      "confidence": "INFERRED",
+      "confidence_score": 0.9,
+      "source_file": "docs/superpowers/specs/2026-05-24-energy-advisor-design.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "energy_advisor_design_spec",
+      "target": "dashboard_layout_mockup"
+    },
+    {
+      "relation": "calls",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-24-energy-advisor-design.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "dashboard_tsx",
+      "target": "energycalculations_ts"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-24-energy-advisor-design.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "dashboard_tsx",
+      "target": "comparisonchart_tsx"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-24-energy-advisor-design.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "dashboard_tsx",
+      "target": "energysourcecard_tsx"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-24-energy-advisor-design.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "dashboard_tsx",
+      "target": "inputpanel_tsx"
+    },
+    {
+      "relation": "implements",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "docs/superpowers/specs/2026-05-24-energy-advisor-design.md",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "dashboard_tsx",
+      "target": "recommendationbanner_tsx"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "src/styles/app.css",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "app_css",
+      "target": "brand_css"
+    },
+    {
+      "relation": "references",
+      "confidence": "INFERRED",
+      "confidence_score": 0.8,
+      "source_file": ".superpowers/brainstorm/1337-1779647661/content/dashboard-layout.html",
+      "source_location": null,
+      "weight": 1.0,
+      "source": "dashboard_layout_mockup",
+      "target": "app_structure_brainstorm"
+    }
+  ],
+  "hyperedges": [],
+  "built_at_commit": "5d20b94f241a79fe03a17bdb9ae2f6ef05c965d6"
+}
