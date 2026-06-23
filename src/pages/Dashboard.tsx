@@ -11,8 +11,12 @@ const DEFAULT_INPUTS: EnergyInputs = {
   hoursPerDay: 8,
   pricePerKwh: 0,
   dieselPrice: 0,
-  solarBudget: 0,
+  panelUnitPrice: 0,
+  inverterPrice: 0,
   solarPanelWatts: 400,
+  peakSunHours: 5,
+  systemEfficiencyPct: 75,
+  mountingFactor: 1.3,
 }
 
 export function Dashboard() {
@@ -21,7 +25,7 @@ export function Dashboard() {
 
   return (
     <div className="dashboard">
-      <InputPanel inputs={inputs} onChange={setInputs} />
+      <InputPanel inputs={inputs} onChange={setInputs} solar={results.solar} />
 
       <main className="dashboard__results">
         <div className="cards-row">
@@ -44,7 +48,7 @@ export function Dashboard() {
 
         <ComparisonChart
           recommendation={results.recommendation}
-          hasSolarBudget={inputs.solarBudget > 0}
+          hasSolarBudget={results.solar.totalBudget > 0}
         />
 
         <RecommendationBanner recommendation={results.recommendation} solarCoveragePct={results.solar.coveragePct} />

@@ -1,12 +1,14 @@
 import { useTranslation } from 'react-i18next'
-import type { EnergyInputs } from '../utils/energyCalculations'
+import type { EnergyInputs, SolarResult } from '../utils/energyCalculations'
+import { fmtXAF } from '../utils/format'
 
 interface Props {
   inputs: EnergyInputs
   onChange: (inputs: EnergyInputs) => void
+  solar: SolarResult
 }
 
-export function InputPanel({ inputs, onChange }: Props) {
+export function InputPanel({ inputs, onChange, solar }: Props) {
   const { t } = useTranslation()
 
   function update<K extends keyof EnergyInputs>(key: K, value: EnergyInputs[K]) {
@@ -17,11 +19,9 @@ export function InputPanel({ inputs, onChange }: Props) {
     return val === 0 ? '' : String(val)
   }
 
-  // Auto-size the array to the device's peak load, rounded up to whole panels.
-  const panelsNeeded =
-    inputs.watts > 0 && inputs.solarPanelWatts > 0
-      ? Math.ceil(inputs.watts / inputs.solarPanelWatts)
-      : 0
+  // Panel count / capacity come from the energy-based sizing in calculateSolar,
+  // so the hints here always match the result cards.
+  const panelsNeeded = solar.panelsNeeded
 
   return (
     <aside className="input-panel">
@@ -102,14 +102,34 @@ export function InputPanel({ inputs, onChange }: Props) {
       </label>
 
       <label className="field">
-        <span className="field-label">{t('inputPanel.solarBudget')}</span>
+        <span className="field-label">{t('inputPanel.panelUnitPrice')}</span>
         <input
           type="number"
           min={0}
-          value={numericValue(inputs.solarBudget)}
-          onChange={e => update('solarBudget', Number(e.target.value))}
+          value={numericValue(inputs.panelUnitPrice)}
+          onChange={e => update('panelUnitPrice', Number(e.target.value))}
           className="field-input"
-          placeholder={t('inputPanel.placeholderSolar')}
+          placeholder={t('inputPanel.placeholderPanelUnitPrice')}
+        />
+      </label>
+
+      {inputs.panelUnitPrice > 0 && panelsNeeded > 0 && (
+        <p className="field-hint">
+          {t('inputPanel.calculatedPanelsTotal', {
+            value: fmtXAF(inputs.panelUnitPrice * panelsNeeded),
+          })}
+        </p>
+      )}
+
+      <label className="field">
+        <span className="field-label">{t('inputPanel.inverterPrice')}</span>
+        <input
+          type="number"
+          min={0}
+          value={numericValue(inputs.inverterPrice)}
+          onChange={e => update('inverterPrice', Number(e.target.value))}
+          className="field-input"
+          placeholder={t('inputPanel.placeholderInverterPrice')}
         />
       </label>
 
@@ -125,15 +145,65 @@ export function InputPanel({ inputs, onChange }: Props) {
         />
       </label>
 
-      {inputs.watts > 0 && inputs.solarPanelWatts > 0 && (
+      <label className="field">
+        <span className="field-label">{t('inputPanel.peakSunHours')}</span>
+        <input
+          type="number"
+          min={1}
+          max={12}
+          step={0.5}
+          value={numericValue(inputs.peakSunHours)}
+          onChange={e => update('peakSunHours', Number(e.target.value))}
+          className="field-input"
+          placeholder={t('inputPanel.placeholderPeakSunHours')}
+        />
+      </label>
+
+      <label className="field">
+        <span className="field-label">{t('inputPanel.systemEfficiency')}</span>
+        <input
+          type="number"
+          min={1}
+          max={100}
+          value={numericValue(inputs.systemEfficiencyPct)}
+          onChange={e => update('systemEfficiencyPct', Number(e.target.value))}
+          className="field-input"
+          placeholder={t('inputPanel.placeholderSystemEfficiency')}
+        />
+      </label>
+
+      {inputs.systemEfficiencyPct > 85 && (
+        <p className="field-hint field-hint--warning">
+          {t('inputPanel.efficiencyWarning')}
+        </p>
+      )}
+
+      <label className="field">
+        <span className="field-label">{t('inputPanel.mountingFactor')}</span>
+        <input
+          type="number"
+          min={1}
+          max={3}
+          step={0.1}
+          value={numericValue(inputs.mountingFactor)}
+          onChange={e => update('mountingFactor', Number(e.target.value))}
+          className="field-input"
+          placeholder={t('inputPanel.placeholderMountingFactor')}
+        />
+      </label>
+
+      {panelsNeeded > 0 && (
         <>
           <p className="field-hint">
             {t('inputPanel.calculatedCapacity', {
-              value: ((panelsNeeded * inputs.solarPanelWatts) / 1000).toFixed(2),
+              value: solar.totalCapacityKw.toFixed(2),
             })}
           </p>
           <p className="field-hint">
             {t('inputPanel.calculatedPanels', { value: panelsNeeded })}
+          </p>
+          <p className="field-hint">
+            {t('inputPanel.calculatedArea', { value: solar.panelAreaM2.toFixed(1) })}
           </p>
         </>
       )}

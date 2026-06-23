@@ -92,6 +92,11 @@ export function EnergySourceCard({ source, electricity, generator, solar, isBest
           <div className="energy-card__meta">
             {t('metrics.batterySize', { value: solar.batteryKwh })}
           </div>
+          {solar.inverterKva > 0 && (
+            <div className="energy-card__meta">
+              {t('metrics.inverterSize', { value: solar.inverterKva })}
+            </div>
+          )}
           {solar.paybackYears !== null && (
             <>
               <div className="energy-card__meta energy-card__meta--highlight">

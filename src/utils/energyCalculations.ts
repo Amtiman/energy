@@ -6,8 +6,12 @@ export interface EnergyInputs {
   hoursPerDay: number
   pricePerKwh: number
   dieselPrice: number
-  solarBudget: number
+  panelUnitPrice: number    // price of a single panel; total = unit price × calculated quantity
+  inverterPrice: number     // price of the inverter
   solarPanelWatts: number   // user-entered capacity per panel; drives auto panel count + array capacity
+  peakSunHours: number      // equivalent hours of full-rated sun per day (location-specific)
+  systemEfficiencyPct: number // overall system efficiency % (losses: inverter, wiring, heat, dust, battery)
+  mountingFactor: number    // installation-area multiplier over raw panel footprint (tilt, row gaps, walkways)
 }
 
 export interface ElectricityResult {
@@ -27,6 +31,8 @@ export interface GeneratorResult {
 export interface SolarResult {
   panelsNeeded: number
   panelWatts: number
+  inverterKva: number          // inverter capacity sized to the device load
+  panelAreaM2: number          // approximate surface area needed to fit all panels
   totalCapacityKw: number
   coveragePct: number | null   // % of device peak load covered; null when no panels entered
   batteryKwh: number
@@ -100,28 +106,56 @@ export function calculateGenerator(inputs: EnergyInputs): GeneratorResult {
 
 // ── Solar ──────────────────────────────────────────────────────────
 
+// Standard inverter ratings (kVA), used to round the required capacity up to a real product size.
+const STANDARD_INVERTER_KVA = [1, 2, 3, 5, 7.5, 10, 15, 20, 25, 30, 40, 50]
+
+// Solar resource & system assumptions (used as fallbacks when the user leaves a field blank)
+const DEFAULT_PEAK_SUN_HOURS = 5   // equivalent hours of full-rated sun per day (≈ Central Africa / XAF zone)
+const DEFAULT_SYSTEM_DERATE = 0.75 // combined losses: inverter, wiring, temperature, dust, battery round-trip
+const BATTERY_DOD = 0.5            // usable depth of discharge (preserves battery lifespan)
+const BATTERY_EFFICIENCY = 0.9     // round-trip storage efficiency
+const PANEL_POWER_DENSITY = 200    // W/m² (≈ 20% module efficiency at 1000 W/m²) → panel area = watts / this
+const DEFAULT_MOUNTING_FACTOR = 1.3 // flush-rooftop default; ground mounts need more (≈1.7+)
+
 export function calculateSolar(inputs: EnergyInputs, electricity: ElectricityResult): SolarResult {
   if (inputs.watts <= 0) {
-    return { panelsNeeded: 0, panelWatts: 0, totalCapacityKw: 0, coveragePct: null, batteryKwh: 0, totalBudget: 0, monthlyAmortized: 0, paybackYears: null, annualSavings: 0 }
+    return { panelsNeeded: 0, panelWatts: 0, inverterKva: 0, panelAreaM2: 0, totalCapacityKw: 0, coveragePct: null, batteryKwh: 0, totalBudget: 0, monthlyAmortized: 0, paybackYears: null, annualSavings: 0 }
   }
   const kW = inputs.watts / 1000
   const panelWatts = inputs.solarPanelWatts > 0 ? inputs.solarPanelWatts : 400
 
-  // Size the array to match the device's peak load, rounded up to whole panels.
-  // Quantity and array capacity are both derived from the per-panel wattage.
-  const panelsNeeded = Math.ceil((kW * 1000) / panelWatts)
+  // Energy-based sizing: the array must replenish the FULL daily kWh during the limited
+  // peak-sun window (not the device run hours), after system losses. This is why the panel
+  // count and capacity grow with the number of working hours per day.
+  const dailyKwh = electricity.dailyKwh                       // kW × hoursPerDay
+  const peakSunHours = inputs.peakSunHours > 0 ? inputs.peakSunHours : DEFAULT_PEAK_SUN_HOURS
+  const derate = inputs.systemEfficiencyPct > 0 ? inputs.systemEfficiencyPct / 100 : DEFAULT_SYSTEM_DERATE
+  const requiredArrayKw = dailyKwh / peakSunHours / derate
+  const panelsNeeded = Math.ceil((requiredArrayKw * 1000) / panelWatts)
   const totalCapacityKw = (panelsNeeded * panelWatts) / 1000
 
-  // Coverage: what % of device peak load the panels can supply
-  const coveragePct = panelsNeeded > 0
-    ? Math.min(100, Math.round((totalCapacityKw / kW) * 100))
-    : null
+  // Approximate installation area: raw panel footprint (≈ watts ÷ power density) scaled by the
+  // mounting factor to account for tilt, row spacing and walkways.
+  const mountingFactor = inputs.mountingFactor > 0 ? inputs.mountingFactor : DEFAULT_MOUNTING_FACTOR
+  const panelAreaM2 = ((panelsNeeded * panelWatts) / PANEL_POWER_DENSITY) * mountingFactor
+
+  // Inverter sized to the device's continuous load (kVA) with 25% headroom, then
+  // rounded up to the next standard inverter size. Power-based — independent of run hours.
+  const pf = inputs.phase === 'three' ? 0.85 : 0.8
+  const requiredInverterKva = (kW / pf) * 1.25
+  const inverterKva = STANDARD_INVERTER_KVA.find(s => s >= requiredInverterKva)
+    ?? STANDARD_INVERTER_KVA[STANDARD_INVERTER_KVA.length - 1]
+
+  // Sized to meet the full daily energy, so a configured system covers 100% of the load.
+  const coveragePct = panelsNeeded > 0 ? 100 : null
   const coverageRatio = coveragePct !== null ? coveragePct / 100 : 1
 
-  // Battery sized for device daily consumption (energy storage, in kWh)
-  const batteryKwh = Math.ceil((kW * inputs.hoursPerDay) / 0.5 / 0.9)
+  // Battery sized to store one full day of consumption (autonomy through non-sun hours).
+  // Grows with working hours via dailyKwh.
+  const batteryKwh = Math.ceil(dailyKwh / BATTERY_DOD / BATTERY_EFFICIENCY)
 
-  const totalBudget = inputs.solarBudget
+  // Total install budget = (unit panel price × quantity) + inverter price
+  const totalBudget = inputs.panelUnitPrice * panelsNeeded + inputs.inverterPrice
   const monthlyAmortized = totalBudget > 0 ? totalBudget / 60 : 0
 
   // Savings scale with coverage: partial panels = partial electricity offset
@@ -131,7 +165,7 @@ export function calculateSolar(inputs: EnergyInputs, electricity: ElectricityRes
       ? parseFloat((totalBudget / annualSavings).toFixed(1))
       : null
 
-  return { panelsNeeded, panelWatts, totalCapacityKw, coveragePct, batteryKwh, totalBudget, monthlyAmortized, paybackYears, annualSavings }
+  return { panelsNeeded, panelWatts, inverterKva, panelAreaM2, totalCapacityKw, coveragePct, batteryKwh, totalBudget, monthlyAmortized, paybackYears, annualSavings }
 }
 
 // ── Recommendation ─────────────────────────────────────────────────
@@ -155,8 +189,8 @@ export function calculateRecommendation(
   // cost is added to the 5-year solar total for a fair comparison.
   const coverageRatio = solar.coveragePct !== null ? solar.coveragePct / 100 : 1
   const residualElec5yr = (1 - Math.min(1, coverageRatio)) * electricity.annualCost * 5
-  const solarFiveYear = inputs.solarBudget > 0
-    ? inputs.solarBudget + residualElec5yr
+  const solarFiveYear = solar.totalBudget > 0
+    ? solar.totalBudget + residualElec5yr
     : Infinity
 
   const raw = {

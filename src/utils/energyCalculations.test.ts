@@ -13,8 +13,12 @@ const BASE = {
   hoursPerDay: 10,
   pricePerKwh: 0.10,
   dieselPrice: 1.00,
-  solarBudget: 0,
+  panelUnitPrice: 0,
+  inverterPrice: 0,
   solarPanelWatts: 400,
+  peakSunHours: 5,
+  systemEfficiencyPct: 75,
+  mountingFactor: 1.3,
 }
 
 describe('calculateElectricity', () => {
@@ -101,30 +105,76 @@ describe('calculateSolar', () => {
     expect(r.coveragePct).toBeNull()
   })
 
-  it('auto-sizes panel count and capacity from per-panel wattage', () => {
+  it('sizes the array by daily energy, peak-sun-hours and losses', () => {
     const elec = calculateElectricity(BASE)
-    // 1kW device / 550W per panel = 1.82 → ceil = 2 panels; 2 × 550W = 1.1 kW
+    // 1kW × 10h = 10 kWh/day; 10 / 5 sun-h / 0.75 = 2.67 kW array
+    // 2.67 kW / 550W per panel → ceil(4.85) = 5 panels; 5 × 550W = 2.75 kW
     const r = calculateSolar({ ...BASE, solarPanelWatts: 550 }, elec)
-    expect(r.panelsNeeded).toBe(2)
+    expect(r.panelsNeeded).toBe(5)
     expect(r.panelWatts).toBe(550)
-    expect(r.totalCapacityKw).toBeCloseTo(1.1)
+    expect(r.totalCapacityKw).toBeCloseTo(2.75)
   })
 
-  it('scales panel count with device load', () => {
-    const elec = calculateElectricity({ ...BASE, watts: 4000 })
-    // 4kW device / 500W per panel = 8 panels; 8 × 500W = 4 kW
-    const r = calculateSolar({ ...BASE, watts: 4000, solarPanelWatts: 500 }, elec)
-    expect(r.panelsNeeded).toBe(8)
-    expect(r.totalCapacityKw).toBeCloseTo(4)
+  it('grows the array with daily working hours (energy, not peak power)', () => {
+    const short = calculateSolar(
+      { ...BASE, hoursPerDay: 5 },
+      calculateElectricity({ ...BASE, hoursPerDay: 5 })
+    )
+    const long = calculateSolar(
+      { ...BASE, hoursPerDay: 10 },
+      calculateElectricity({ ...BASE, hoursPerDay: 10 })
+    )
+    // 5 kWh/day → 1.33 kW → 4 × 400W;  10 kWh/day → 2.67 kW → 7 × 400W
+    expect(short.panelsNeeded).toBe(4)
+    expect(long.panelsNeeded).toBe(7)
+    expect(long.panelsNeeded).toBeGreaterThan(short.panelsNeeded)
+  })
+
+  it('needs fewer panels in sunnier locations (higher peak sun hours)', () => {
+    // 10 kWh/day, 0.75 derate. 5 sun-h → 2.67 kW → 7 panels; 10 sun-h → 1.33 kW → 4 panels
+    const sunny = calculateSolar({ ...BASE, peakSunHours: 10 }, calculateElectricity(BASE))
+    const cloudy = calculateSolar({ ...BASE, peakSunHours: 5 }, calculateElectricity(BASE))
+    expect(sunny.panelsNeeded).toBe(4)
+    expect(cloudy.panelsNeeded).toBe(7)
+    expect(sunny.panelsNeeded).toBeLessThan(cloudy.panelsNeeded)
+  })
+
+  it('needs more panels as system efficiency drops', () => {
+    // 10 kWh/day, 5 sun-h. 75% → 2.67 kW → 7 panels; 50% → 4.0 kW → 10 panels
+    const efficient = calculateSolar({ ...BASE, systemEfficiencyPct: 75 }, calculateElectricity(BASE))
+    const lossy = calculateSolar({ ...BASE, systemEfficiencyPct: 50 }, calculateElectricity(BASE))
+    expect(efficient.panelsNeeded).toBe(7)
+    expect(lossy.panelsNeeded).toBe(10)
+    expect(lossy.panelsNeeded).toBeGreaterThan(efficient.panelsNeeded)
+  })
+
+  it('falls back to defaults (5 sun-h, 75%) when those fields are blank', () => {
+    const r = calculateSolar({ ...BASE, peakSunHours: 0, systemEfficiencyPct: 0 }, calculateElectricity(BASE))
+    expect(r.panelsNeeded).toBe(7)
   })
 
   it('defaults panel wattage to 400 when solarPanelWatts is 0', () => {
     const elec = calculateElectricity(BASE)
     const r = calculateSolar({ ...BASE, solarPanelWatts: 0 }, elec)
     expect(r.panelWatts).toBe(400)
-    // 1kW device / 400W = 2.5 → ceil = 3 panels; 3 × 400W = 1.2 kW
-    expect(r.panelsNeeded).toBe(3)
-    expect(r.totalCapacityKw).toBeCloseTo(1.2)
+    // 10 kWh/day → 2.67 kW array / 400W → ceil(6.67) = 7 panels; 7 × 400W = 2.8 kW
+    expect(r.panelsNeeded).toBe(7)
+    expect(r.totalCapacityKw).toBeCloseTo(2.8)
+  })
+
+  it('estimates installation area from footprint × mounting factor', () => {
+    const elec = calculateElectricity(BASE)
+    // BASE → 7 panels × 400W = 2800W; 2800 / 200 W/m² = 14 m² footprint × 1.3 = 18.2 m²
+    const r = calculateSolar(BASE, elec)
+    expect(r.panelAreaM2).toBeCloseTo(18.2)
+  })
+
+  it('scales installation area with the mounting factor (and falls back to 1.3)', () => {
+    const elec = calculateElectricity(BASE)
+    const ground = calculateSolar({ ...BASE, mountingFactor: 1.7 }, elec)
+    const fallback = calculateSolar({ ...BASE, mountingFactor: 0 }, elec)
+    expect(ground.panelAreaM2).toBeCloseTo(14 * 1.7)   // 23.8 m²
+    expect(fallback.panelAreaM2).toBeCloseTo(14 * 1.3) // blank → default 1.3
   })
 
   it('calculates battery bank in kWh with 50% DoD and 90% efficiency', () => {
@@ -134,10 +184,10 @@ describe('calculateSolar', () => {
     expect(r.batteryKwh).toBe(23)
   })
 
-  it('covers 100% of peak load since the array is sized to the device', () => {
+  it('reports 100% coverage when sized to meet daily energy', () => {
     const elec = calculateElectricity(BASE)
-    // 3 × 400W = 1.2 kW ≥ 1 kW device → capped at 100%
     const r = calculateSolar(BASE, elec)
+    expect(r.panelsNeeded).toBe(7)
     expect(r.coveragePct).toBe(100)
   })
 
@@ -147,23 +197,46 @@ describe('calculateSolar', () => {
     expect(r.annualSavings).toBeCloseTo(elec.annualCost)
   })
 
-  it('returns null payback when solarBudget is 0', () => {
+  it('returns null payback when no prices are entered', () => {
     const elec = calculateElectricity(BASE)
-    const r = calculateSolar({ ...BASE, solarBudget: 0 }, elec)
+    const r = calculateSolar({ ...BASE, panelUnitPrice: 0, inverterPrice: 0 }, elec)
     expect(r.paybackYears).toBeNull()
     expect(r.monthlyAmortized).toBe(0)
   })
 
+  it('builds the total budget from unit price × calculated quantity + inverter price', () => {
+    const elec = calculateElectricity(BASE)
+    // BASE energy sizing → 7 panels; 7 × 200 = 1400 panels + 130 inverter = 1530
+    const r = calculateSolar({ ...BASE, panelUnitPrice: 200, inverterPrice: 130 }, elec)
+    expect(r.panelsNeeded).toBe(7)
+    expect(r.totalBudget).toBe(1530)
+  })
+
   it('calculates payback when budget and full coverage provided', () => {
     // 1kW device, pricePerKwh=0.10, 10h/day → annualCost = $365
-    // budget = $730, panels cover 100% → payback = 2 years
-    const inputs = { ...BASE, pricePerKwh: 0.10, solarBudget: 730, solarPanelWatts: 400 }
+    // 7 panels × $100 = $700 + $30 inverter = $730, covers 100% → payback = 2 years
+    const inputs = { ...BASE, pricePerKwh: 0.10, panelUnitPrice: 100, inverterPrice: 30, solarPanelWatts: 400 }
     const elec = calculateElectricity(inputs)
     const r = calculateSolar(inputs, elec)
+    expect(r.panelsNeeded).toBe(7)
     expect(r.coveragePct).toBe(100)
     expect(r.paybackYears).toBe(2)
     expect(r.totalBudget).toBe(730)
     expect(r.monthlyAmortized).toBeCloseTo(730 / 60)
+  })
+
+  it('sizes the inverter to the device load (single-phase, 25% headroom)', () => {
+    const elec = calculateElectricity(BASE)
+    // 1kW / 0.8 × 1.25 = 1.5625 kVA → next standard size = 2 kVA
+    const r = calculateSolar(BASE, elec)
+    expect(r.inverterKva).toBe(2)
+  })
+
+  it('sizes a larger inverter for a bigger device', () => {
+    const elec = calculateElectricity({ ...BASE, watts: 7000 })
+    // 7kW / 0.8 × 1.25 = 10.94 kVA → next standard size = 15 kVA
+    const r = calculateSolar({ ...BASE, watts: 7000 }, elec)
+    expect(r.inverterKva).toBe(15)
   })
 })
 
@@ -179,7 +252,7 @@ describe('calculateRecommendation', () => {
     expect(r.bestOption).toBeNull()
   })
 
-  it('excludes solar from comparison when solarBudget is 0', () => {
+  it('excludes solar from comparison when no prices are entered', () => {
     // 5yr: electricity=$1825, generator=$4562.5, solar=Infinity → electricity wins
     const elec = calculateElectricity(BASE)
     const gen = calculateGenerator(BASE)
@@ -189,14 +262,15 @@ describe('calculateRecommendation', () => {
   })
 
   it('picks solar when its 5-year cost is lowest', () => {
-    // solar=$500, electricity=$1825, generator=$4562.5 → solar wins
-    const inputs = { ...BASE, solarBudget: 500 }
+    // 7 panels × $100 = $700 + $200 inverter = $900 install
+    // solar=$900, electricity=$1825, generator=$18250 → solar wins
+    const inputs = { ...BASE, panelUnitPrice: 100, inverterPrice: 200 }
     const elec = calculateElectricity(inputs)
     const gen = calculateGenerator(inputs)
     const sol = calculateSolar(inputs, elec)
     const r = calculateRecommendation(inputs, elec, gen, sol)
     expect(r.bestOption).toBe('solar')
-    expect(r.savingsAmount).toBeCloseTo(1825 - 500)
+    expect(r.savingsAmount).toBeCloseTo(1825 - 900)
   })
 })
 
